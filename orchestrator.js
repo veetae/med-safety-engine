@@ -31,6 +31,7 @@ function MED_SAFETY_ENGINE(patient_data) {
     active_illness = {},
     current_medications = [],
     conditions = [],
+    icd_codes = [],
     recent_maoi_use = null,
     ppi_duration_weeks = null
   } = patient_data;
@@ -104,7 +105,7 @@ function MED_SAFETY_ENGINE(patient_data) {
   timing.beers = Date.now();
   if (patient_age >= 65) {
     try {
-      const result = BEERS_CRITERIA_CHECK({ patient_age, medications: current_medications, conditions, egfr, ppi_duration_weeks });
+      const result = BEERS_CRITERIA_CHECK({ patient_age, medications: current_medications, conditions, icd_codes, egfr, ppi_duration_weeks });
       all_alerts = all_alerts.concat(result.alerts.map(a => ({ ...a, source: "BEERS" })));
       function_results.beers = result.metadata;
     } catch (err) {
