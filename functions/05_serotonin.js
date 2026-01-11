@@ -59,7 +59,20 @@ function SEROTONIN_SYNDROME_CHECK(input) {
 
     if (SEROTONIN_DRUGS.high.includes(medClass) || 
         name.includes("linezolid") || 
-        name.includes("methylene blue")) {
+        name.includes("methylene blue") ||
+        // SSRIs by name
+        name.includes("fluoxetine") ||
+        name.includes("sertraline") ||
+        name.includes("paroxetine") ||
+        name.includes("citalopram") ||
+        name.includes("escitalopram") ||
+        name.includes("fluvoxamine") ||
+        // SNRIs by name
+        name.includes("venlafaxine") ||
+        name.includes("duloxetine") ||
+        name.includes("desvenlafaxine") ||
+        name.includes("levomilnacipran") ||
+        name.includes("milnacipran")) {
       high_risk.push(med);
     } else if (SEROTONIN_DRUGS.moderate.includes(medClass) ||
                name.includes("tramadol") || 

@@ -30,6 +30,30 @@ const MME_FACTORS = {
 const CNS_DEPRESSANTS = ["benzodiazepine", "Z_drug", "gabapentinoid", "muscle_relaxant", "barbiturate"];
 const OPIOID_CLASSES = ["opioid", "opioid_long_acting"];
 
+// Name-based detection lists
+const OPIOID_NAMES = ["morphine", "hydrocodone", "oxycodone", "hydromorphone", "oxymorphone", 
+  "fentanyl", "codeine", "tramadol", "tapentadol", "methadone", "buprenorphine", "meperidine",
+  "norco", "vicodin", "percocet", "dilaudid", "opana", "duragesic", "nucynta", "ultram"];
+
+const BENZO_NAMES = ["alprazolam", "lorazepam", "diazepam", "clonazepam", "temazepam", 
+  "triazolam", "midazolam", "chlordiazepoxide", "oxazepam", "clorazepate", "flurazepam",
+  "xanax", "ativan", "valium", "klonopin", "restoril", "halcion"];
+
+const Z_DRUG_NAMES = ["zolpidem", "eszopiclone", "zaleplon", "ambien", "lunesta", "sonata"];
+
+const GABAPENTINOID_NAMES = ["gabapentin", "pregabalin", "neurontin", "lyrica"];
+
+const MUSCLE_RELAXANT_NAMES = ["cyclobenzaprine", "carisoprodol", "methocarbamol", "tizanidine", 
+  "baclofen", "orphenadrine", "metaxalone", "flexeril", "soma", "robaxin", "zanaflex"];
+
+/**
+ * Check if medication name matches any in the list
+ */
+function matchesDrugList(medName, drugList) {
+  const name = (medName || "").toLowerCase();
+  return drugList.some(drug => name.includes(drug));
+}
+
 /**
  * @param {Object} input
  * @param {Array} input.medications - [{name, class, dose, frequency}]
@@ -43,12 +67,23 @@ function OPIOID_SAFETY_CHECK(input) {
   const { medications, patient_age, egfr, opioid_naive = true, respiratory_disease = false } = input;
   const alerts = [];
 
-  // Identify drug categories
-  const opioid_meds = medications.filter(m => OPIOID_CLASSES.includes(m.class));
-  const benzo_meds = medications.filter(m => m.class === "benzodiazepine");
-  const z_drug_meds = medications.filter(m => m.class === "Z_drug");
-  const gabapentinoid_meds = medications.filter(m => m.class === "gabapentinoid");
-  const cns_meds = medications.filter(m => CNS_DEPRESSANTS.includes(m.class));
+  // Identify drug categories (class-based OR name-based)
+  const opioid_meds = medications.filter(m => 
+    OPIOID_CLASSES.includes(m.class) || matchesDrugList(m.name, OPIOID_NAMES)
+  );
+  const benzo_meds = medications.filter(m => 
+    m.class === "benzodiazepine" || matchesDrugList(m.name, BENZO_NAMES)
+  );
+  const z_drug_meds = medications.filter(m => 
+    m.class === "Z_drug" || matchesDrugList(m.name, Z_DRUG_NAMES)
+  );
+  const gabapentinoid_meds = medications.filter(m => 
+    m.class === "gabapentinoid" || matchesDrugList(m.name, GABAPENTINOID_NAMES)
+  );
+  const muscle_relaxant_meds = medications.filter(m =>
+    m.class === "muscle_relaxant" || matchesDrugList(m.name, MUSCLE_RELAXANT_NAMES)
+  );
+  const cns_meds = [...benzo_meds, ...z_drug_meds, ...gabapentinoid_meds, ...muscle_relaxant_meds];
 
   if (opioid_meds.length === 0) {
     return { alerts: [], metadata: { has_opioid: false } };
