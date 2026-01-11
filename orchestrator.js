@@ -1,33 +1,33 @@
 /**
  * MED SAFETY ENGINE ORCHESTRATOR
- * Version 2.6.0
- * 
- * Central router that calls all safety functions and aggregates alerts.
- * All alert codes come from constants/alert_codes.js
+ * Version 3.0.0
  */
 
-const { ALERT_CODES, ALERT_CODE_META } = require("./constants/alert_codes.js");
-const { SEROTONIN_SYNDROME_CHECK } = require("./functions/06_serotonin.js");
-const { BEERS_CRITERIA_CHECK } = require("./functions/07_beers.js");
+const { ALERT_CODES } = require("./constants/alert_codes.js");
+const { RENAL_DOSING_CHECK } = require("./functions/01_renal_dosing.js");
+const { TRIPLE_WHAMMY_CHECK } = require("./functions/02_triple_whammy.js");
+const { OPIOID_SAFETY_CHECK } = require("./functions/03_opioid_safety.js");
+const { ANTITHROMBOTIC_COMBINATION_CHECK } = require("./functions/04_antithrombotic.js");
+const { SEROTONIN_SYNDROME_CHECK } = require("./functions/05_serotonin.js");
+const { BEERS_CRITERIA_CHECK } = require("./functions/06_beers.js");
 
-// Severity ranking for sorting
 const SEVERITY_ORDER = { "CRITICAL": 1, "HIGH": 2, "MODERATE": 3, "LOW": 4, "INFO": 5 };
 
-/**
- * @param {Object} patient_data
- * @returns {{ alert_count, critical_count, high_count, has_blocking_alerts, alerts, summary }}
- */
 function MED_SAFETY_ENGINE(patient_data) {
   const {
-    patient_age,
-    patient_sex,
-    weight_kg,
-    egfr,
-    ckd_stage,
+    patient_age = null,
+    patient_sex = null,
+    weight_kg = null,
+    egfr = null,
     liver_disease = false,
     heart_failure = false,
     atrial_fibrillation = false,
     prior_gi_bleed = false,
+    recent_pci_date = null,
+    stent_type = null,
+    hb_low = false,
+    respiratory_disease = false,
+    opioid_naive = true,
     active_illness = {},
     current_medications = [],
     conditions = [],
@@ -36,74 +36,93 @@ function MED_SAFETY_ENGINE(patient_data) {
   } = patient_data;
 
   let all_alerts = [];
+  const function_results = {};
+  const timing = {};
 
-  // ═══════════════════════════════════════════════════════════════
-  // FUNCTION 5: SEROTONIN SYNDROME (06_serotonin.js)
-  // Trigger: Patient on serotonergic agent
-  // ═══════════════════════════════════════════════════════════════
-  const on_serotonergic = current_medications.some(m =>
-    ["SSRI", "SNRI", "TCA", "MAOI", "tramadol", "triptan", "mirtazapine", "buspirone", "trazodone"]
-      .includes(m.class)
-  );
-
-  if (on_serotonergic) {
+  // FUNCTION 1: RENAL DOSING (always run if egfr provided)
+  timing.renal = Date.now();
+  if (egfr !== null && egfr < 90) {
     try {
-      const result = SEROTONIN_SYNDROME_CHECK({
-        medications: current_medications,
-        patient_age,
-        egfr,
-        liver_disease,
-        recent_maoi_use
-      });
-      all_alerts = all_alerts.concat(
-        result.alerts.map(a => ({ ...a, source: "SEROTONIN_SYNDROME" }))
-      );
+      const result = RENAL_DOSING_CHECK({ egfr, medications: current_medications });
+      all_alerts = all_alerts.concat(result.alerts.map(a => ({ ...a, source: "RENAL" })));
+      function_results.renal = result.metadata;
     } catch (err) {
-      all_alerts.push({
-        alert_code: ALERT_CODES.SYSTEM_FUNCTION_ERROR,
-        severity: "HIGH",
-        message: `Serotonin check failed: ${err.message}`,
-        source: "SYSTEM"
-      });
+      all_alerts.push({ alert_code: ALERT_CODES.SYSTEM_FUNCTION_ERROR, severity: "HIGH", message: `Renal: ${err.message}`, source: "SYSTEM" });
     }
   }
+  timing.renal = Date.now() - timing.renal;
 
-  // ═══════════════════════════════════════════════════════════════
-  // FUNCTION 6: BEERS CRITERIA (07_beers.js)
-  // Trigger: Patient age ≥65
-  // ═══════════════════════════════════════════════════════════════
+  // FUNCTION 2: TRIPLE WHAMMY (always run - checks internally)
+  timing.triple = Date.now();
+  try {
+    const result = TRIPLE_WHAMMY_CHECK({ medications: current_medications, active_illness, egfr });
+    all_alerts = all_alerts.concat(result.alerts.map(a => ({ ...a, source: "TRIPLE_WHAMMY" })));
+    function_results.triple = result.metadata;
+  } catch (err) {
+    all_alerts.push({ alert_code: ALERT_CODES.SYSTEM_FUNCTION_ERROR, severity: "HIGH", message: `Triple: ${err.message}`, source: "SYSTEM" });
+  }
+  timing.triple = Date.now() - timing.triple;
+
+  // FUNCTION 3: OPIOID SAFETY (always run - checks internally)
+  timing.opioid = Date.now();
+  try {
+    const result = OPIOID_SAFETY_CHECK({ medications: current_medications, patient_age, egfr, opioid_naive, respiratory_disease });
+    all_alerts = all_alerts.concat(result.alerts.map(a => ({ ...a, source: "OPIOID" })));
+    function_results.opioid = result.metadata;
+  } catch (err) {
+    all_alerts.push({ alert_code: ALERT_CODES.SYSTEM_FUNCTION_ERROR, severity: "HIGH", message: `Opioid: ${err.message}`, source: "SYSTEM" });
+  }
+  timing.opioid = Date.now() - timing.opioid;
+
+  // FUNCTION 4: ANTITHROMBOTIC (always run - checks internally)
+  timing.antithromb = Date.now();
+  try {
+    const result = ANTITHROMBOTIC_COMBINATION_CHECK({
+      medications: current_medications, patient_age, egfr, weight_kg, atrial_fibrillation,
+      prior_gi_bleed, recent_pci_date, stent_type, liver_disease, hb_low,
+      on_chronic_nsaid: current_medications.some(m => ["NSAID", "COX2_inhibitor"].includes(m.class))
+    });
+    all_alerts = all_alerts.concat(result.alerts.map(a => ({ ...a, source: "ANTITHROMB" })));
+    function_results.antithromb = result.metadata;
+  } catch (err) {
+    all_alerts.push({ alert_code: ALERT_CODES.SYSTEM_FUNCTION_ERROR, severity: "HIGH", message: `Antithromb: ${err.message}`, source: "SYSTEM" });
+  }
+  timing.antithromb = Date.now() - timing.antithromb;
+
+  // FUNCTION 5: SEROTONIN (always run - checks internally)
+  timing.serotonin = Date.now();
+  try {
+    const result = SEROTONIN_SYNDROME_CHECK({ medications: current_medications, patient_age, egfr, liver_disease, recent_maoi_use });
+    all_alerts = all_alerts.concat(result.alerts.map(a => ({ ...a, source: "SEROTONIN" })));
+    function_results.serotonin = result.metadata;
+  } catch (err) {
+    all_alerts.push({ alert_code: ALERT_CODES.SYSTEM_FUNCTION_ERROR, severity: "HIGH", message: `Serotonin: ${err.message}`, source: "SYSTEM" });
+  }
+  timing.serotonin = Date.now() - timing.serotonin;
+
+  // FUNCTION 6: BEERS (age >= 65)
+  timing.beers = Date.now();
   if (patient_age >= 65) {
     try {
-      const result = BEERS_CRITERIA_CHECK({
-        patient_age,
-        medications: current_medications,
-        conditions,
-        egfr,
-        ppi_duration_weeks
-      });
-      all_alerts = all_alerts.concat(
-        result.alerts.map(a => ({ ...a, source: "BEERS_CRITERIA" }))
-      );
+      const result = BEERS_CRITERIA_CHECK({ patient_age, medications: current_medications, conditions, egfr, ppi_duration_weeks });
+      all_alerts = all_alerts.concat(result.alerts.map(a => ({ ...a, source: "BEERS" })));
+      function_results.beers = result.metadata;
     } catch (err) {
-      all_alerts.push({
-        alert_code: ALERT_CODES.SYSTEM_FUNCTION_ERROR,
-        severity: "HIGH",
-        message: `Beers check failed: ${err.message}`,
-        source: "SYSTEM"
-      });
+      all_alerts.push({ alert_code: ALERT_CODES.SYSTEM_FUNCTION_ERROR, severity: "HIGH", message: `Beers: ${err.message}`, source: "SYSTEM" });
     }
   }
+  timing.beers = Date.now() - timing.beers;
 
+  // DEDUPLICATE
+  const seen = new Map();
+  for (const alert of all_alerts) {
+    const key = `${alert.alert_code || ""}:${alert.drug || ""}`.toLowerCase();
+    if (!seen.has(key)) seen.set(key, alert);
+  }
+  all_alerts = Array.from(seen.values());
 
-  // ═══════════════════════════════════════════════════════════════
-  // AGGREGATE AND DEDUPLICATE
-  // ═══════════════════════════════════════════════════════════════
-  all_alerts = deduplicateAlerts(all_alerts);
-
-  // Sort by severity
-  all_alerts.sort((a, b) => 
-    (SEVERITY_ORDER[a.severity] || 99) - (SEVERITY_ORDER[b.severity] || 99)
-  );
+  // SORT BY SEVERITY
+  all_alerts.sort((a, b) => (SEVERITY_ORDER[a.severity] || 99) - (SEVERITY_ORDER[b.severity] || 99));
 
   return {
     alert_count: all_alerts.length,
@@ -111,42 +130,9 @@ function MED_SAFETY_ENGINE(patient_data) {
     high_count: all_alerts.filter(a => a.severity === "HIGH").length,
     has_blocking_alerts: all_alerts.some(a => a.severity === "CRITICAL"),
     alerts: all_alerts,
-    summary: generateAlertSummary(all_alerts)
+    function_results,
+    timing
   };
-}
-
-function deduplicateAlerts(alerts) {
-  const seen = new Map();
-  for (const alert of alerts) {
-    const key = (alert.drug || alert.alert_code || "unknown").toLowerCase();
-    if (!seen.has(key)) {
-      seen.set(key, alert);
-    } else {
-      const existing = seen.get(key);
-      if (SEVERITY_ORDER[alert.severity] < SEVERITY_ORDER[existing.severity]) {
-        seen.set(key, alert);
-      } else if (SEVERITY_ORDER[alert.severity] === SEVERITY_ORDER[existing.severity]) {
-        existing.source = existing.source + ", " + alert.source;
-      }
-    }
-  }
-  return Array.from(seen.values());
-}
-
-function generateAlertSummary(alerts) {
-  if (alerts.length === 0) return "✓ No medication safety alerts identified.";
-  const critical = alerts.filter(a => a.severity === "CRITICAL");
-  const high = alerts.filter(a => a.severity === "HIGH");
-  const summary = [];
-  if (critical.length > 0) {
-    summary.push(`🚨 ${critical.length} CRITICAL alert(s):`);
-    critical.forEach(a => summary.push(`   • ${a.drug || a.message}`));
-  }
-  if (high.length > 0) {
-    summary.push(`⚠️ ${high.length} HIGH priority alert(s):`);
-    high.forEach(a => summary.push(`   • ${a.drug || a.message}`));
-  }
-  return summary.join("\n");
 }
 
 module.exports = { MED_SAFETY_ENGINE };

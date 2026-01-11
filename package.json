@@ -2,7 +2,6 @@
   "name": "med-safety-engine",
   "version": "2.6.0",
   "description": "TitanMind Medication Safety Engine",
-  "type": "module",
   "main": "orchestrator.js",
   "scripts": {
     "generate": "node scripts/generate_alert_codes.mjs",

@@ -1,6 +1,6 @@
 /**
  * BEERS CRITERIA CHECK
- * Function 07 - Domain: BEERS
+ * Function 06 - Domain: BEERS
  * 
  * AGS 2023 Beers Criteria for Potentially Inappropriate Medications in Older Adults
  * Applies to patients age ≥65
