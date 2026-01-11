@@ -12,6 +12,11 @@
  */
 
 const { ALERT_CODES } = require("../constants/alert_codes.js");
+const { 
+  deriveConditionsFromICD, 
+  getContraindicatedEffects,
+  CONDITION_AVOID_EFFECTS: ICD_CONDITION_EFFECTS 
+} = require("./07_icd_condition_mapper.js");
 
 // ═══════════════════════════════════════════════════════════════
 // TOXIDROMES - Clinical syndrome patterns
@@ -573,15 +578,39 @@ function identifyToxidrome(symptoms) {
  * @param {Object} input
  * @param {number} input.patient_age
  * @param {Array} input.medications - [{name, dose}]
- * @param {Array} input.conditions - ["dementia", "falls_history", etc]
+ * @param {Array} input.conditions - ["dementia", "falls_history", etc] (legacy string-based)
+ * @param {Array} input.icd_codes - ["F03.90", "G30.1", etc] (preferred ICD-10 based)
  * @param {number|null} input.egfr
  * @param {number|null} input.ppi_duration_weeks
  * @param {string[]} input.symptoms - For toxidrome identification (optional)
  * @returns {{ alerts: Array, metadata: Object }}
  */
 function BEERS_CRITERIA_CHECK(input) {
-  const { patient_age, medications, conditions = [], egfr, ppi_duration_weeks, symptoms } = input;
+  const { patient_age, medications, conditions = [], icd_codes = [], egfr, ppi_duration_weeks, symptoms } = input;
   const alerts = [];
+
+  // Beers only applies to age ≥65
+  if (patient_age < 65) {
+    return { alerts: [], metadata: { beers_applies: false, reason: "Age < 65" } };
+  }
+
+  // ═══════════════════════════════════════════════════════════════
+  // DERIVE CONDITIONS FROM ICD CODES (if provided)
+  // Merges with legacy string conditions for backwards compatibility
+  // ═══════════════════════════════════════════════════════════════
+  let derived_conditions = [];
+  let icd_avoid_effects = new Set();
+  let icd_condition_details = {};
+
+  if (icd_codes && icd_codes.length > 0) {
+    const icd_result = getContraindicatedEffects(icd_codes);
+    derived_conditions = icd_result.conditionKeys;
+    icd_avoid_effects = new Set(icd_result.avoidEffects);
+    icd_condition_details = icd_result.byCondition;
+  }
+
+  // Merge legacy string conditions with ICD-derived conditions
+  const all_conditions = [...new Set([...conditions, ...derived_conditions])];
 
   // Beers only applies to age ≥65
   if (patient_age < 65) {
@@ -618,7 +647,38 @@ function BEERS_CRITERIA_CHECK(input) {
 
     // ═══════════════════════════════════════════════════════════════
     // TABLE 2: Check drug effects against condition contraindications
+    // Uses both legacy CONDITION_AVOID_EFFECTS and ICD-derived effects
     // ═══════════════════════════════════════════════════════════════
+    
+    // First check: ICD-derived avoid effects (if ICD codes provided)
+    if (icd_avoid_effects.size > 0) {
+      const bad_effects = effects.filter(e => icd_avoid_effects.has(e));
+      if (bad_effects.length > 0) {
+        // Find which conditions triggered this
+        const triggering_conditions = derived_conditions.filter(c => {
+          const cond_info = icd_condition_details[c];
+          return cond_info && bad_effects.some(e => cond_info.effects.includes(e));
+        });
+        
+        // Check drug exclusions (e.g., quetiapine OK in Parkinson's)
+        const excluded = triggering_conditions.some(c => {
+          const cond_info = icd_condition_details[c];
+          return cond_info?.exclude_drugs?.some(ex => drugName.toLowerCase().includes(ex));
+        });
+        
+        if (!excluded) {
+          condition_interactions.push({
+            drug: drugName,
+            condition: triggering_conditions.join(", "),
+            harmful_effects: bad_effects,
+            reason: triggering_conditions.map(c => icd_condition_details[c]?.reason).filter(Boolean).join("; "),
+            source: "ICD"
+          });
+        }
+      }
+    }
+    
+    // Second check: Legacy string-based conditions
     for (const condition of conditions) {
       const condition_info = CONDITION_AVOID_EFFECTS[condition];
       if (!condition_info) continue;
@@ -738,6 +798,11 @@ function BEERS_CRITERIA_CHECK(input) {
       acb_score: acb_total,
       cns_active_count: cns_count,
       drug_effects: Object.fromEntries(drug_effects_map),
+      // ICD-derived info
+      icd_derived_conditions: derived_conditions.length > 0 ? derived_conditions : undefined,
+      icd_avoid_effects: icd_avoid_effects.size > 0 ? Array.from(icd_avoid_effects) : undefined,
+      // Combined conditions (legacy + ICD)
+      all_conditions: all_conditions.length > 0 ? all_conditions : undefined,
       toxidrome_matches: toxidrome_matches.length > 0 ? toxidrome_matches : undefined
     }
   };
