@@ -1,0 +1,216 @@
+{
+  "registry_version": "2.6.0",
+  "updated": "2026-01-10",
+  "namespace": "MED_SAFETY",
+  "codes": {
+    "RENAL_METFORMIN_CONTRAINDICATED": {
+      "domain": "RENAL_DOSING",
+      "default_severity": "CRITICAL"
+    },
+    "RENAL_METFORMIN_REDUCE": {
+      "domain": "RENAL_DOSING",
+      "default_severity": "HIGH"
+    },
+    "RENAL_GABAPENTINOID_ADJUST": {
+      "domain": "RENAL_DOSING",
+      "default_severity": "HIGH"
+    },
+    "RENAL_DOAC_ADJUST": {
+      "domain": "RENAL_DOSING",
+      "default_severity": "HIGH"
+    },
+    "RENAL_DOAC_CONTRAINDICATED": {
+      "domain": "RENAL_DOSING",
+      "default_severity": "CRITICAL"
+    },
+    "RENAL_NSAID_AVOID": {
+      "domain": "RENAL_DOSING",
+      "default_severity": "HIGH"
+    },
+    "RENAL_GLYBURIDE_AVOID": {
+      "domain": "RENAL_DOSING",
+      "default_severity": "HIGH"
+    },
+    "RENAL_NITROFURANTOIN_AVOID": {
+      "domain": "RENAL_DOSING",
+      "default_severity": "HIGH"
+    },
+
+    "TRIPLE_WHAMMY_PRESENT": {
+      "domain": "TRIPLE_WHAMMY",
+      "default_severity": "HIGH"
+    },
+    "TRIPLE_WHAMMY_NSAID_CKD": {
+      "domain": "TRIPLE_WHAMMY",
+      "default_severity": "HIGH"
+    },
+    "TRIPLE_WHAMMY_VOLUME_DEPLETION": {
+      "domain": "TRIPLE_WHAMMY",
+      "default_severity": "CRITICAL"
+    },
+
+    "DUAL_RAAS_ACE_ARB": {
+      "domain": "DUAL_RAAS",
+      "default_severity": "HIGH"
+    },
+    "DUAL_RAAS_ARNI_OVERLAP": {
+      "domain": "DUAL_RAAS",
+      "default_severity": "CRITICAL"
+    },
+
+    "DUP_ANTICOAGULANT_DOAC": {
+      "domain": "THERAPEUTIC_DUPLICATION",
+      "default_severity": "CRITICAL"
+    },
+    "DUP_ANTICOAGULANT_MIXED": {
+      "domain": "THERAPEUTIC_DUPLICATION",
+      "default_severity": "CRITICAL"
+    },
+    "DUP_ANTICOAGULANT_MULTIPLE": {
+      "domain": "THERAPEUTIC_DUPLICATION",
+      "default_severity": "CRITICAL"
+    },
+    "DUP_SSRI": {
+      "domain": "THERAPEUTIC_DUPLICATION",
+      "default_severity": "HIGH"
+    },
+    "DUP_SNRI": {
+      "domain": "THERAPEUTIC_DUPLICATION",
+      "default_severity": "HIGH"
+    },
+    "DUP_STATIN": {
+      "domain": "THERAPEUTIC_DUPLICATION",
+      "default_severity": "HIGH"
+    },
+    "DUP_PPI": {
+      "domain": "THERAPEUTIC_DUPLICATION",
+      "default_severity": "HIGH"
+    },
+    "DUP_BIGUANIDE": {
+      "domain": "THERAPEUTIC_DUPLICATION",
+      "default_severity": "HIGH"
+    },
+    "DUP_BETA_BLOCKER": {
+      "domain": "THERAPEUTIC_DUPLICATION",
+      "default_severity": "HIGH"
+    },
+    "DUP_BENZODIAZEPINE": {
+      "domain": "THERAPEUTIC_DUPLICATION",
+      "default_severity": "MODERATE"
+    },
+    "DUP_OPIOID": {
+      "domain": "THERAPEUTIC_DUPLICATION",
+      "default_severity": "MODERATE"
+    },
+    "DUP_THIAZIDE": {
+      "domain": "THERAPEUTIC_DUPLICATION",
+      "default_severity": "MODERATE"
+    },
+    "DUP_LOOP_DIURETIC": {
+      "domain": "THERAPEUTIC_DUPLICATION",
+      "default_severity": "MODERATE"
+    },
+
+    "ANTITHROMB_TRIPLE_THERAPY": {
+      "domain": "ANTITHROMBOTIC",
+      "default_severity": "CRITICAL"
+    },
+    "ANTITHROMB_DUAL_ANTICOAG": {
+      "domain": "ANTITHROMBOTIC",
+      "default_severity": "CRITICAL"
+    },
+    "ANTITHROMB_HIGH_BLEED_RISK": {
+      "domain": "ANTITHROMBOTIC",
+      "default_severity": "HIGH"
+    },
+    "ANTITHROMB_DOAC_DOSE_CHECK": {
+      "domain": "ANTITHROMBOTIC",
+      "default_severity": "HIGH"
+    },
+    "ANTITHROMB_NO_INDICATION": {
+      "domain": "ANTITHROMBOTIC",
+      "default_severity": "HIGH"
+    },
+
+    "OPIOID_BENZO_COMBINATION": {
+      "domain": "OPIOID_SAFETY",
+      "default_severity": "CRITICAL"
+    },
+    "OPIOID_CNS_POLYPHARMACY": {
+      "domain": "OPIOID_SAFETY",
+      "default_severity": "HIGH"
+    },
+    "OPIOID_HIGH_MME": {
+      "domain": "OPIOID_SAFETY",
+      "default_severity": "HIGH"
+    },
+    "OPIOID_NALOXONE_NEEDED": {
+      "domain": "OPIOID_SAFETY",
+      "default_severity": "HIGH"
+    },
+    "OPIOID_ER_NAIVE": {
+      "domain": "OPIOID_SAFETY",
+      "default_severity": "HIGH"
+    },
+
+    "SEROTONIN_MAOI_COMBINATION": {
+      "domain": "SEROTONIN_SYNDROME",
+      "default_severity": "CRITICAL"
+    },
+    "SEROTONIN_HIGH_RISK": {
+      "domain": "SEROTONIN_SYNDROME",
+      "default_severity": "HIGH"
+    },
+    "SEROTONIN_MODERATE_RISK": {
+      "domain": "SEROTONIN_SYNDROME",
+      "default_severity": "MODERATE"
+    },
+    "SEROTONIN_WASHOUT_VIOLATION": {
+      "domain": "SEROTONIN_SYNDROME",
+      "default_severity": "CRITICAL"
+    },
+
+    "BEERS_PIM_TABLE1": {
+      "domain": "BEERS",
+      "default_severity": "HIGH"
+    },
+    "BEERS_DISEASE_INTERACTION": {
+      "domain": "BEERS",
+      "default_severity": "HIGH"
+    },
+    "BEERS_ACB_HIGH": {
+      "domain": "BEERS",
+      "default_severity": "HIGH"
+    },
+    "BEERS_CNS_POLYPHARMACY": {
+      "domain": "BEERS",
+      "default_severity": "HIGH"
+    },
+    "BEERS_PPI_LONG_TERM": {
+      "domain": "BEERS",
+      "default_severity": "MODERATE"
+    },
+
+    "VALIDATION_EGFR_MISSING": {
+      "domain": "INPUT_VALIDATION",
+      "default_severity": "INFO"
+    },
+    "VALIDATION_WEIGHT_MISSING": {
+      "domain": "INPUT_VALIDATION",
+      "default_severity": "INFO"
+    },
+    "VALIDATION_AGE_MISSING": {
+      "domain": "INPUT_VALIDATION",
+      "default_severity": "INFO"
+    },
+
+    "SYSTEM_FUNCTION_ERROR": {
+      "domain": "SYSTEM",
+      "default_severity": "HIGH"
+    },
+    "SYSTEM_ENGINE_ERROR": {
+      "domain": "SYSTEM",
+      "default_severity": "CRITICAL"
+    }
+  }
+}

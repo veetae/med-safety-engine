@@ -1,0 +1,17 @@
+{
+  "name": "med-safety-engine",
+  "version": "2.6.0",
+  "description": "TitanMind Medication Safety Engine",
+  "type": "module",
+  "main": "orchestrator.js",
+  "scripts": {
+    "generate": "node scripts/generate_alert_codes.mjs",
+    "check": "node scripts/check_alert_codes.mjs",
+    "test": "node --test functions/*.test.js",
+    "pretest": "npm run check",
+    "build": "npm run generate && npm run check"
+  },
+  "keywords": ["clinical", "medication", "safety", "cdss"],
+  "author": "Dr. Tae / TitanMind",
+  "license": "PROPRIETARY"
+}
