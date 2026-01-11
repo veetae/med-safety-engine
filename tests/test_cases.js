@@ -47,7 +47,7 @@ const TEST_CASES = [
       egfr: 45,
       current_medications: [
         { name: "sertraline", dose: "100mg daily", class: "SSRI" },
-        { name: "tramadol", dose: "50mg TID", class: "tramadol" },
+        { name: "tramadol", dose: "50mg TID", class: "opioid" },
         { name: "lorazepam", dose: "0.5mg QHS", class: "benzodiazepine" }
       ],
       conditions: []
