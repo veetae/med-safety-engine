@@ -181,19 +181,33 @@ for (const [canonical, def] of Object.entries(EFFECTS_VOCABULARY)) {
 // VALIDATION & NORMALIZATION FUNCTIONS
 // ═══════════════════════════════════════════════════════════════
 
+// Track alias usage for deprecation warnings (one-time per tag)
+const _aliasWarningsLogged = new Set();
+
 /**
  * Normalize an effect tag to canonical lowercase form
  * Handles legacy uppercase tags (QT_prolonging -> qt_prolonging)
+ * Logs deprecation warning on first use of legacy alias
  * @param {string} tag 
  * @returns {string} Canonical lowercase tag
  */
 function normEffectTag(tag) {
   if (!tag || typeof tag !== 'string') return '';
   const trimmed = tag.trim();
+  
   // Check alias map first (handles QT_prolonging -> qt_prolonging)
   if (ALIAS_TO_CANONICAL[trimmed]) {
-    return ALIAS_TO_CANONICAL[trimmed];
+    const canonical = ALIAS_TO_CANONICAL[trimmed];
+    
+    // Warn on legacy alias usage (once per tag)
+    if (trimmed !== canonical && !_aliasWarningsLogged.has(trimmed)) {
+      _aliasWarningsLogged.add(trimmed);
+      console.warn(`[DEPRECATED] Effect alias "${trimmed}" -> use "${canonical}" instead`);
+    }
+    
+    return canonical;
   }
+  
   // Fallback: lowercase
   return trimmed.toLowerCase();
 }
@@ -220,23 +234,25 @@ function validateEffects(effects) {
   // Coerce to array safely
   const arr = Array.isArray(effects) ? effects : [];
   
-  const normalized = [];
+  const normalizedSet = new Set(); // Dedupe
   const invalid = [];
   
   for (const e of arr) {
     if (!e || typeof e !== 'string') continue;
     const norm = normEffectTag(e);
     if (ALLOWED_EFFECTS.includes(norm)) {
-      normalized.push(norm);
+      normalizedSet.add(norm);
     } else {
       invalid.push(e);
     }
   }
   
+  const normalized = Array.from(normalizedSet);
+  
   return {
     valid: invalid.length === 0,
     invalid,
-    normalized
+    normalized // Always returned, deduped
   };
 }
 

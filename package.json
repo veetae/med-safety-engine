@@ -1,16 +1,17 @@
 {
   "name": "med-safety-engine",
-  "version": "2.6.0",
-  "description": "TitanMind Medication Safety Engine",
+  "version": "2.7.0",
+  "description": "Clinical medication safety engine for primary care and nephrology",
   "main": "orchestrator.js",
   "scripts": {
     "generate": "node scripts/generate_alert_codes.mjs",
     "check": "node scripts/check_alert_codes.mjs",
-    "test": "node --test functions/*.test.js",
-    "pretest": "npm run check",
+    "validate:effects": "node scripts/validate_effects.mjs",
+    "test": "node tests/test_cases.js",
+    "ci": "npm run validate:effects && npm run test",
     "build": "npm run generate && npm run check"
   },
-  "keywords": ["clinical", "medication", "safety", "cdss"],
-  "author": "Dr. Tae / TitanMind",
-  "license": "PROPRIETARY"
+  "keywords": ["clinical", "medication", "safety", "cdss", "beers", "drug-interactions"],
+  "author": "Dr. Tae / Seven Star Medical Group",
+  "license": "MIT"
 }
