@@ -128,7 +128,7 @@ const CONDITION_GROUPERS = [
   },
   {
     conditionKey: "diabetes_hypoglycemia_risk",
-    icdPrefixes: ["E1164", "E1165", "E1164x", "E1165x"],
+    icdPrefixes: ["E1164", "E1165"],
     reason: "History of hypoglycemia increases risk with long-acting sulfonylureas",
     note: "Avoid glyburide/chlorpropamide; prefer shorter-acting agents"
   }
