@@ -65,12 +65,12 @@ const DRUG_EFFECTS = {
   "cyproheptadine": ["anticholinergic", "sedating"],
 
   // === TRICYCLIC ANTIDEPRESSANTS ===
-  "amitriptyline": ["anticholinergic", "sedating", "QT_prolonging"],
-  "imipramine": ["anticholinergic", "sedating", "QT_prolonging"],
+  "amitriptyline": ["anticholinergic", "sedating", "qt_prolonging"],
+  "imipramine": ["anticholinergic", "sedating", "qt_prolonging"],
   "doxepin": ["anticholinergic", "sedating"],
-  "nortriptyline": ["anticholinergic", "sedating", "QT_prolonging"],
-  "desipramine": ["anticholinergic", "QT_prolonging"],
-  "clomipramine": ["anticholinergic", "sedating", "serotonergic", "QT_prolonging"],
+  "nortriptyline": ["anticholinergic", "sedating", "qt_prolonging"],
+  "desipramine": ["anticholinergic", "qt_prolonging"],
+  "clomipramine": ["anticholinergic", "sedating", "serotonergic", "qt_prolonging"],
   "trimipramine": ["anticholinergic", "sedating"],
   "protriptyline": ["anticholinergic"],
 
@@ -117,14 +117,14 @@ const DRUG_EFFECTS = {
   "baclofen": ["sedating"],
 
   // === ANTIPSYCHOTICS ===
-  "haloperidol": ["dopamine_blocking", "QT_prolonging", "fall_risk"],
-  "chlorpromazine": ["dopamine_blocking", "anticholinergic", "sedating", "QT_prolonging", "seizure_lowering"],
-  "thioridazine": ["dopamine_blocking", "anticholinergic", "QT_prolonging", "seizure_lowering"],
+  "haloperidol": ["dopamine_blocking", "qt_prolonging", "fall_risk"],
+  "chlorpromazine": ["dopamine_blocking", "anticholinergic", "sedating", "qt_prolonging", "seizure_lowering"],
+  "thioridazine": ["dopamine_blocking", "anticholinergic", "qt_prolonging", "seizure_lowering"],
   "quetiapine": ["sedating", "dopamine_blocking", "hypotensive"],
   "olanzapine": ["sedating", "dopamine_blocking", "anticholinergic"],
   "risperidone": ["dopamine_blocking", "hypotensive"],
   "aripiprazole": ["dopamine_blocking"],
-  "ziprasidone": ["dopamine_blocking", "QT_prolonging"],
+  "ziprasidone": ["dopamine_blocking", "qt_prolonging"],
   "clozapine": ["sedating", "anticholinergic", "seizure_lowering"],
   "prochlorperazine": ["dopamine_blocking"],
   "metoclopramide": ["dopamine_blocking"],
@@ -138,26 +138,26 @@ const DRUG_EFFECTS = {
   "codeine": ["opioid", "sedating"],
   "tramadol": ["opioid", "serotonergic", "seizure_lowering"],
   "meperidine": ["opioid", "sedating", "seizure_lowering", "neurotoxic"],
-  "methadone": ["opioid", "sedating", "QT_prolonging"],
+  "methadone": ["opioid", "sedating", "qt_prolonging"],
   "buprenorphine": ["opioid", "sedating"],
   "tapentadol": ["opioid", "serotonergic"],
 
   // === NSAIDs ===
-  "ibuprofen": ["nephrotoxic", "GI_bleeding", "fluid_retention"],
-  "naproxen": ["nephrotoxic", "GI_bleeding", "fluid_retention"],
-  "diclofenac": ["nephrotoxic", "GI_bleeding", "fluid_retention"],
-  "meloxicam": ["nephrotoxic", "GI_bleeding", "fluid_retention"],
-  "indomethacin": ["nephrotoxic", "GI_bleeding", "fluid_retention", "CNS_effects"],
-  "ketorolac": ["nephrotoxic", "GI_bleeding", "fluid_retention"],
-  "piroxicam": ["nephrotoxic", "GI_bleeding", "fluid_retention"],
+  "ibuprofen": ["nephrotoxic", "gi_bleeding", "fluid_retention"],
+  "naproxen": ["nephrotoxic", "gi_bleeding", "fluid_retention"],
+  "diclofenac": ["nephrotoxic", "gi_bleeding", "fluid_retention"],
+  "meloxicam": ["nephrotoxic", "gi_bleeding", "fluid_retention"],
+  "indomethacin": ["nephrotoxic", "gi_bleeding", "fluid_retention", "CNS_effects"],
+  "ketorolac": ["nephrotoxic", "gi_bleeding", "fluid_retention"],
+  "piroxicam": ["nephrotoxic", "gi_bleeding", "fluid_retention"],
   "celecoxib": ["nephrotoxic", "fluid_retention"],
-  "aspirin": ["GI_bleeding", "antiplatelet"],
+  "aspirin": ["gi_bleeding", "antiplatelet"],
 
   // === CARDIOVASCULAR ===
   "digoxin": ["arrhythmogenic", "narrow_therapeutic_index"],
-  "amiodarone": ["QT_prolonging", "thyroid_effects", "pulmonary_toxicity"],
-  "sotalol": ["QT_prolonging"],
-  "dofetilide": ["QT_prolonging"],
+  "amiodarone": ["qt_prolonging", "thyroid_effects", "pulmonary_toxicity"],
+  "sotalol": ["qt_prolonging"],
+  "dofetilide": ["qt_prolonging"],
   "dronedarone": ["fluid_retention"],
   "nifedipine": ["hypotensive", "reflex_tachycardia"],
   "diltiazem": ["bradycardic", "hypotensive"],
@@ -172,13 +172,13 @@ const DRUG_EFFECTS = {
   "glyburide": ["hypoglycemia_prolonged"],
   "glipizide": ["hypoglycemia"],
   "glimepiride": ["hypoglycemia"],
-  "chlorpropamide": ["hypoglycemia_prolonged", "SIADH"],
+  "chlorpropamide": ["hypoglycemia_prolonged", "siadh"],
   "insulin": ["hypoglycemia"],
 
   // === ANTICONVULSANTS ===
   "phenytoin": ["sedating", "fall_risk", "narrow_therapeutic_index"],
   "phenobarbital": ["sedating", "fall_risk"],
-  "carbamazepine": ["sedating", "SIADH", "narrow_therapeutic_index"],
+  "carbamazepine": ["sedating", "siadh", "narrow_therapeutic_index"],
   "valproate": ["sedating"],
   "gabapentin": ["sedating", "fall_risk"],
   "pregabalin": ["sedating", "fall_risk"],
@@ -189,8 +189,8 @@ const DRUG_EFFECTS = {
   "fluoxetine": ["serotonergic", "fall_risk"],
   "sertraline": ["serotonergic", "fall_risk"],
   "paroxetine": ["serotonergic", "anticholinergic", "fall_risk"],
-  "citalopram": ["serotonergic", "QT_prolonging", "fall_risk"],
-  "escitalopram": ["serotonergic", "QT_prolonging", "fall_risk"],
+  "citalopram": ["serotonergic", "qt_prolonging", "fall_risk"],
+  "escitalopram": ["serotonergic", "qt_prolonging", "fall_risk"],
   "venlafaxine": ["serotonergic", "hypertensive"],
   "duloxetine": ["serotonergic"],
   "mirtazapine": ["sedating", "fall_risk"],
@@ -198,22 +198,22 @@ const DRUG_EFFECTS = {
   "bupropion": ["seizure_lowering"],
 
   // === GI ===
-  "omeprazole": ["PPI_effects"],
-  "pantoprazole": ["PPI_effects"],
-  "esomeprazole": ["PPI_effects"],
-  "lansoprazole": ["PPI_effects"],
-  "rabeprazole": ["PPI_effects"],
-  "dexlansoprazole": ["PPI_effects"],
+  "omeprazole": ["ppi_effects"],
+  "pantoprazole": ["ppi_effects"],
+  "esomeprazole": ["ppi_effects"],
+  "lansoprazole": ["ppi_effects"],
+  "rabeprazole": ["ppi_effects"],
+  "dexlansoprazole": ["ppi_effects"],
   "cimetidine": ["anticholinergic", "drug_interactions"],
   "ranitidine": ["CNS_effects"],
   "famotidine": [],
 
   // === ANTIBIOTICS ===
   "nitrofurantoin": ["nephrotoxic", "pulmonary_toxicity"],
-  "fluoroquinolones": ["QT_prolonging", "tendon_rupture", "CNS_effects"],
-  "ciprofloxacin": ["QT_prolonging", "tendon_rupture", "CNS_effects"],
-  "levofloxacin": ["QT_prolonging", "tendon_rupture", "CNS_effects"],
-  "moxifloxacin": ["QT_prolonging", "tendon_rupture"],
+  "fluoroquinolones": ["qt_prolonging", "tendon_rupture", "CNS_effects"],
+  "ciprofloxacin": ["qt_prolonging", "tendon_rupture", "CNS_effects"],
+  "levofloxacin": ["qt_prolonging", "tendon_rupture", "CNS_effects"],
+  "moxifloxacin": ["qt_prolonging", "tendon_rupture"],
 
   // === OTHER ===
   "theophylline": ["arrhythmogenic", "seizure_lowering", "narrow_therapeutic_index"],
@@ -253,7 +253,7 @@ const CONDITION_AVOID_EFFECTS = {
     reason: "Fluid retention worsens HF; NSAIDs reduce renal perfusion"
   },
   "syncope": {
-    effects: ["hypotensive", "bradycardic", "QT_prolonging"],
+    effects: ["hypotensive", "bradycardic", "qt_prolonging"],
     reason: "May precipitate syncope"
   },
   "parkinson": {
@@ -266,11 +266,11 @@ const CONDITION_AVOID_EFFECTS = {
     reason: "Lowers seizure threshold"
   },
   "gi_bleed_history": {
-    effects: ["GI_bleeding", "antiplatelet"],
+    effects: ["gi_bleeding", "antiplatelet"],
     reason: "Increased bleeding risk"
   },
   "peptic_ulcer": {
-    effects: ["GI_bleeding"],
+    effects: ["gi_bleeding"],
     reason: "May cause or worsen ulceration"
   },
   "ckd_stage_4": {
@@ -298,7 +298,7 @@ const CONDITION_AVOID_EFFECTS = {
     reason: "May precipitate acute glaucoma"
   },
   "QT_prolongation": {
-    effects: ["QT_prolonging"],
+    effects: ["qt_prolonging"],
     reason: "Risk of torsades de pointes"
   },
   "bradycardia": {
@@ -772,7 +772,7 @@ function BEERS_CRITERIA_CHECK(input) {
   if (ppi_duration_weeks && ppi_duration_weeks > 8) {
     const has_ppi = medications.some(m => {
       const effects = getDrugEffects(m.name);
-      return effects.includes("PPI_effects");
+      return effects.includes("ppi_effects");
     });
     
     if (has_ppi) {

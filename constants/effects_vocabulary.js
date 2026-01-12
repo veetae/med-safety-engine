@@ -2,15 +2,24 @@
  * EFFECTS VOCABULARY
  * Canonical list of allowed drug effect tags
  * 
- * Future CI should enforce: no effect string used unless listed here
+ * ═══════════════════════════════════════════════════════════════
+ * CI ENFORCEMENT RULES:
+ * 1. No effect string literals allowed outside this file
+ * 2. All effect tags must be in ALLOWED_EFFECTS
+ * 3. Use normEffectTag() at input boundaries for case safety
+ * ═══════════════════════════════════════════════════════════════
+ * 
+ * NAMING CONVENTION:
+ * - All tags use lowercase_snake_case
+ * - Legacy uppercase tags (QT_prolonging, GI_bleeding, PPI_effects, SIADH)
+ *   have lowercase aliases for forward compatibility
  * 
  * Categories:
  * - Cardiovascular
- * - CNS/Neurological
+ * - CNS/Neurological  
  * - Renal/Metabolic
  * - GI/Hepatic
  * - Hematologic
- * - Other
  */
 
 const EFFECTS_VOCABULARY = {
@@ -25,9 +34,10 @@ const EFFECTS_VOCABULARY = {
     description: "Slows heart rate",
     examples: ["beta blockers", "diltiazem", "verapamil", "digoxin"]
   },
-  QT_prolonging: {
+  qt_prolonging: {
     description: "Prolongs QT interval, torsades risk",
-    examples: ["amiodarone", "sotalol", "fluoroquinolones", "antipsychotics"]
+    examples: ["amiodarone", "sotalol", "fluoroquinolones", "antipsychotics"],
+    aliases: ["QT_prolonging"]
   },
   fluid_retention: {
     description: "Causes edema/volume overload",
@@ -110,21 +120,24 @@ const EFFECTS_VOCABULARY = {
   // ═══════════════════════════════════════════════════════════════
   // GI / HEPATIC
   // ═══════════════════════════════════════════════════════════════
-  GI_bleeding: {
+  gi_bleeding: {
     description: "Increases GI bleeding risk",
-    examples: ["NSAIDs", "aspirin", "corticosteroids"]
+    examples: ["NSAIDs", "aspirin", "corticosteroids"],
+    aliases: ["GI_bleeding"]
   },
   hepatotoxic: {
     description: "Causes liver injury",
     examples: ["acetaminophen (high dose)", "statins", "amiodarone"]
   },
-  PPI_effects: {
+  ppi_effects: {
     description: "Long-term PPI effects - fracture risk, hypomagnesemia, C.diff",
-    examples: ["omeprazole", "pantoprazole", "esomeprazole"]
+    examples: ["omeprazole", "pantoprazole", "esomeprazole"],
+    aliases: ["PPI_effects"]
   },
-  SIADH: {
+  siadh: {
     description: "Causes SIADH / hyponatremia",
-    examples: ["SSRIs", "carbamazepine", "chlorpropamide"]
+    examples: ["SSRIs", "carbamazepine", "chlorpropamide"],
+    aliases: ["SIADH"]
   },
 
   // ═══════════════════════════════════════════════════════════════
@@ -144,34 +157,108 @@ const EFFECTS_VOCABULARY = {
   }
 };
 
-// Extract just the tag names for validation
+// ═══════════════════════════════════════════════════════════════
+// DERIVED LOOKUPS
+// ═══════════════════════════════════════════════════════════════
+
+// Primary canonical tags (lowercase)
 const ALLOWED_EFFECTS = Object.keys(EFFECTS_VOCABULARY);
+
+// Build alias map for legacy uppercase support
+const ALIAS_TO_CANONICAL = {};
+for (const [canonical, def] of Object.entries(EFFECTS_VOCABULARY)) {
+  if (def.aliases) {
+    for (const alias of def.aliases) {
+      ALIAS_TO_CANONICAL[alias] = canonical;
+      ALIAS_TO_CANONICAL[alias.toLowerCase()] = canonical;
+    }
+  }
+  // Also map the canonical to itself for normalization
+  ALIAS_TO_CANONICAL[canonical] = canonical;
+}
+
+// ═══════════════════════════════════════════════════════════════
+// VALIDATION & NORMALIZATION FUNCTIONS
+// ═══════════════════════════════════════════════════════════════
+
+/**
+ * Normalize an effect tag to canonical lowercase form
+ * Handles legacy uppercase tags (QT_prolonging -> qt_prolonging)
+ * @param {string} tag 
+ * @returns {string} Canonical lowercase tag
+ */
+function normEffectTag(tag) {
+  if (!tag || typeof tag !== 'string') return '';
+  const trimmed = tag.trim();
+  // Check alias map first (handles QT_prolonging -> qt_prolonging)
+  if (ALIAS_TO_CANONICAL[trimmed]) {
+    return ALIAS_TO_CANONICAL[trimmed];
+  }
+  // Fallback: lowercase
+  return trimmed.toLowerCase();
+}
 
 /**
  * Validate that an effect tag is in the vocabulary
+ * Accepts both canonical and aliased forms
  * @param {string} effect 
  * @returns {boolean}
  */
 function isValidEffect(effect) {
-  return ALLOWED_EFFECTS.includes(effect);
+  if (!effect || typeof effect !== 'string') return false;
+  const normalized = normEffectTag(effect);
+  return ALLOWED_EFFECTS.includes(normalized);
 }
 
 /**
  * Validate all effects in an array
- * @param {string[]} effects 
- * @returns {{ valid: boolean, invalid: string[] }}
+ * Handles null/undefined input safely
+ * @param {string[]|null|undefined} effects 
+ * @returns {{ valid: boolean, invalid: string[], normalized: string[] }}
  */
 function validateEffects(effects) {
-  const invalid = effects.filter(e => !isValidEffect(e));
+  // Coerce to array safely
+  const arr = Array.isArray(effects) ? effects : [];
+  
+  const normalized = [];
+  const invalid = [];
+  
+  for (const e of arr) {
+    if (!e || typeof e !== 'string') continue;
+    const norm = normEffectTag(e);
+    if (ALLOWED_EFFECTS.includes(norm)) {
+      normalized.push(norm);
+    } else {
+      invalid.push(e);
+    }
+  }
+  
   return {
     valid: invalid.length === 0,
-    invalid
+    invalid,
+    normalized
   };
 }
 
+/**
+ * Normalize an array of effects to canonical form
+ * Filters out invalid effects silently
+ * @param {string[]|null|undefined} effects 
+ * @returns {string[]} Array of canonical effect tags
+ */
+function normalizeEffects(effects) {
+  return validateEffects(effects).normalized;
+}
+
+// ═══════════════════════════════════════════════════════════════
+// EXPORTS
+// ═══════════════════════════════════════════════════════════════
 module.exports = {
   EFFECTS_VOCABULARY,
   ALLOWED_EFFECTS,
+  ALIAS_TO_CANONICAL,
+  normEffectTag,
   isValidEffect,
-  validateEffects
+  validateEffects,
+  normalizeEffects
 };

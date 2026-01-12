@@ -158,7 +158,7 @@ const CONDITION_AVOID_EFFECTS = {
   },
 
   syncope: {
-    effects: ["hypotensive", "bradycardic", "QT_prolonging"],
+    effects: ["hypotensive", "bradycardic", "qt_prolonging"],
     reason: "Syncope risk increases with hypotension, bradycardia, and QT-prolonging agents",
     note: "Review BP/HR/QTc-lowering contributors and orthostasis risk"
   },
@@ -177,7 +177,7 @@ const CONDITION_AVOID_EFFECTS = {
   },
 
   gi_bleed_peptic_ulcer_history: {
-    effects: ["GI_bleeding", "antiplatelet"],
+    effects: ["gi_bleeding", "antiplatelet"],
     reason: "History of ulcer/bleeding increases recurrence risk with GI-toxic agents and platelet inhibition",
     note: "Consider gastroprotection where indicated and avoid unnecessary combinations"
   },
@@ -207,7 +207,7 @@ const CONDITION_AVOID_EFFECTS = {
   },
 
   qt_prolongation: {
-    effects: ["QT_prolonging"],
+    effects: ["qt_prolonging"],
     reason: "QT prolongation increases torsades risk with QT-prolonging agents",
     note: "Monitor ECG and electrolytes; avoid stacking QT-prolongers"
   },
@@ -243,7 +243,7 @@ const CONDITION_AVOID_EFFECTS = {
   },
 
   osteoporosis: {
-    effects: ["fall_risk", "PPI_effects"],
+    effects: ["fall_risk", "ppi_effects"],
     reason: "Fracture risk increases with falls; long-term PPI-associated effects may worsen bone health",
     note: "Minimize fall-risk agents; reassess long-term PPI necessity"
   },
