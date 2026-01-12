@@ -1,0 +1,22 @@
+# Dependencies
+node_modules/
+
+# Logs (keep structure, ignore contents)
+logs/*.json
+!logs/.gitkeep
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+
+# Test output
+coverage/
+*.log
+
+# Environment
+.env
+.env.local
