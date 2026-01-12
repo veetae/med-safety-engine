@@ -1,0 +1,58 @@
+[
+  {
+    "drug": "somefakedrug",
+    "context": "BEERS_DRUG_EFFECTS",
+    "timestamp": "2026-01-12T00:00:13.347Z",
+    "patientAge": null,
+    "conditions": []
+  },
+  {
+    "drug": "eluxadoline",
+    "context": "BEERS_DRUG_EFFECTS",
+    "timestamp": "2026-01-12T00:00:13.348Z",
+    "patientAge": null,
+    "conditions": []
+  },
+  {
+    "drug": "atomoxetine",
+    "context": "BEERS_DRUG_EFFECTS",
+    "timestamp": "2026-01-12T00:00:13.354Z",
+    "patientAge": null,
+    "conditions": []
+  },
+  {
+    "drug": "metformin",
+    "context": "BEERS_DRUG_EFFECTS",
+    "timestamp": "2026-01-12T00:00:24.665Z",
+    "patientAge": null,
+    "conditions": []
+  },
+  {
+    "drug": "lisinopril",
+    "context": "BEERS_DRUG_EFFECTS",
+    "timestamp": "2026-01-12T00:00:24.667Z",
+    "patientAge": null,
+    "conditions": []
+  },
+  {
+    "drug": "furosemide",
+    "context": "BEERS_DRUG_EFFECTS",
+    "timestamp": "2026-01-12T00:00:24.672Z",
+    "patientAge": null,
+    "conditions": []
+  },
+  {
+    "drug": "phenelzine",
+    "context": "BEERS_DRUG_EFFECTS",
+    "timestamp": "2026-01-12T00:00:24.681Z",
+    "patientAge": null,
+    "conditions": []
+  },
+  {
+    "drug": "apixaban",
+    "context": "BEERS_DRUG_EFFECTS",
+    "timestamp": "2026-01-12T00:00:24.686Z",
+    "patientAge": null,
+    "conditions": []
+  }
+]

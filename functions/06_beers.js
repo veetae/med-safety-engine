@@ -17,6 +17,7 @@ const {
   getContraindicatedEffects,
   CONDITION_AVOID_EFFECTS: ICD_CONDITION_EFFECTS 
 } = require("./07_icd_condition_mapper.js");
+const { logUnknownDrug } = require("../utils/unknown_drugs.js");
 
 // ═══════════════════════════════════════════════════════════════
 // TOXIDROMES - Clinical syndrome patterns
@@ -499,6 +500,11 @@ function getDrugEffects(drugName) {
     if (name_lower.includes(drug) || drug.includes(name_lower)) {
       return effects;
     }
+  }
+  
+  // Not found - log for future expansion
+  if (name_lower.length > 2) {
+    logUnknownDrug(drugName, "BEERS_DRUG_EFFECTS");
   }
   
   return [];
