@@ -255,6 +255,8 @@ const CONDITION_AVOID_EFFECTS = {
   },
 
   diabetes_hypoglycemia_risk: {
+    // NOTE: "hypoglycemia_prolonged" is an approved effect tag - included in EFFECTS_VOCABULARY
+    // Used by Beers criteria for glyburide/chlorpropamide flagging
     effects: ["hypoglycemia_prolonged"],
     reason: "History of hypoglycemia increases risk with long-acting sulfonylureas",
     note: "Avoid glyburide/chlorpropamide; prefer shorter-acting agents"
