@@ -1,0 +1,4182 @@
+{
+  "cimetidine": {
+    "atc": "A02BA01",
+    "class": "H2_blocker",
+    "effects": [
+      "anticholinergic_weak"
+    ]
+  },
+  "ranitidine": {
+    "atc": "A02BA02",
+    "class": "H2_blocker",
+    "effects": [
+      "anticholinergic_weak"
+    ]
+  },
+  "famotidine": {
+    "atc": "A02BA03",
+    "class": "H2_blocker",
+    "effects": [
+      "anticholinergic_weak"
+    ]
+  },
+  "nizatidine": {
+    "atc": "A02BA04",
+    "class": "H2_blocker",
+    "effects": [
+      "anticholinergic_weak"
+    ]
+  },
+  "niperotidine": {
+    "atc": "A02BA05",
+    "class": "H2_blocker",
+    "effects": [
+      "anticholinergic_weak"
+    ]
+  },
+  "roxatidine": {
+    "atc": "A02BA06",
+    "class": "H2_blocker",
+    "effects": [
+      "anticholinergic_weak"
+    ]
+  },
+  "ranitidine bismuth citrate": {
+    "atc": "A02BA07",
+    "class": "H2_blocker",
+    "effects": [
+      "anticholinergic_weak"
+    ]
+  },
+  "lafutidine": {
+    "atc": "A02BA08",
+    "class": "H2_blocker",
+    "effects": [
+      "anticholinergic_weak"
+    ]
+  },
+  "cimetidine, combinations": {
+    "atc": "A02BA51",
+    "class": "H2_blocker",
+    "effects": [
+      "anticholinergic_weak"
+    ]
+  },
+  "famotidine, combinations": {
+    "atc": "A02BA53",
+    "class": "H2_blocker",
+    "effects": [
+      "anticholinergic_weak"
+    ]
+  },
+  "omeprazole": {
+    "atc": "A02BC01",
+    "class": "PPI",
+    "effects": [
+      "PPI_effects",
+      "hypomagnesemia"
+    ]
+  },
+  "pantoprazole": {
+    "atc": "A02BC02",
+    "class": "PPI",
+    "effects": [
+      "PPI_effects",
+      "hypomagnesemia"
+    ]
+  },
+  "lansoprazole": {
+    "atc": "A02BC03",
+    "class": "PPI",
+    "effects": [
+      "PPI_effects",
+      "hypomagnesemia"
+    ]
+  },
+  "rabeprazole": {
+    "atc": "A02BC04",
+    "class": "PPI",
+    "effects": [
+      "PPI_effects",
+      "hypomagnesemia"
+    ]
+  },
+  "esomeprazole": {
+    "atc": "A02BC05",
+    "class": "PPI",
+    "effects": [
+      "PPI_effects",
+      "hypomagnesemia"
+    ]
+  },
+  "dexlansoprazole": {
+    "atc": "A02BC06",
+    "class": "PPI",
+    "effects": [
+      "PPI_effects",
+      "hypomagnesemia"
+    ]
+  },
+  "dexrabeprazole": {
+    "atc": "A02BC07",
+    "class": "PPI",
+    "effects": [
+      "PPI_effects",
+      "hypomagnesemia"
+    ]
+  },
+  "vonoprazan": {
+    "atc": "A02BC08",
+    "class": "PPI",
+    "effects": [
+      "PPI_effects",
+      "hypomagnesemia"
+    ]
+  },
+  "lansoprazole, combinations": {
+    "atc": "A02BC53",
+    "class": "PPI",
+    "effects": [
+      "PPI_effects",
+      "hypomagnesemia"
+    ]
+  },
+  "rabeprazole, combinations": {
+    "atc": "A02BC54",
+    "class": "PPI",
+    "effects": [
+      "PPI_effects",
+      "hypomagnesemia"
+    ]
+  },
+  "phenformin": {
+    "atc": "A10BA01",
+    "class": "biguanide",
+    "effects": [
+      "lactic_acidosis_risk"
+    ]
+  },
+  "metformin": {
+    "atc": "A10BA02",
+    "class": "biguanide",
+    "effects": [
+      "lactic_acidosis_risk"
+    ]
+  },
+  "buformin": {
+    "atc": "A10BA03",
+    "class": "biguanide",
+    "effects": [
+      "lactic_acidosis_risk"
+    ]
+  },
+  "glibenclamide": {
+    "atc": "A10BB01",
+    "class": "sulfonylurea",
+    "effects": [
+      "hypoglycemia_prolonged"
+    ]
+  },
+  "chlorpropamide": {
+    "atc": "A10BB02",
+    "class": "sulfonylurea",
+    "effects": [
+      "hypoglycemia_prolonged"
+    ]
+  },
+  "tolbutamide": {
+    "atc": "A10BB03",
+    "class": "sulfonylurea",
+    "effects": [
+      "hypoglycemia_prolonged"
+    ]
+  },
+  "glibornuride": {
+    "atc": "A10BB04",
+    "class": "sulfonylurea",
+    "effects": [
+      "hypoglycemia_prolonged"
+    ]
+  },
+  "tolazamide": {
+    "atc": "A10BB05",
+    "class": "sulfonylurea",
+    "effects": [
+      "hypoglycemia_prolonged"
+    ]
+  },
+  "carbutamide": {
+    "atc": "A10BB06",
+    "class": "sulfonylurea",
+    "effects": [
+      "hypoglycemia_prolonged"
+    ]
+  },
+  "glipizide": {
+    "atc": "A10BB07",
+    "class": "sulfonylurea",
+    "effects": [
+      "hypoglycemia_prolonged"
+    ]
+  },
+  "gliquidone": {
+    "atc": "A10BB08",
+    "class": "sulfonylurea",
+    "effects": [
+      "hypoglycemia_prolonged"
+    ]
+  },
+  "gliclazide": {
+    "atc": "A10BB09",
+    "class": "sulfonylurea",
+    "effects": [
+      "hypoglycemia_prolonged"
+    ]
+  },
+  "metahexamide": {
+    "atc": "A10BB10",
+    "class": "sulfonylurea",
+    "effects": [
+      "hypoglycemia_prolonged"
+    ]
+  },
+  "glisoxepide": {
+    "atc": "A10BB11",
+    "class": "sulfonylurea",
+    "effects": [
+      "hypoglycemia_prolonged"
+    ]
+  },
+  "glimepiride": {
+    "atc": "A10BB12",
+    "class": "sulfonylurea",
+    "effects": [
+      "hypoglycemia_prolonged"
+    ]
+  },
+  "acetohexamide": {
+    "atc": "A10BB31",
+    "class": "sulfonylurea",
+    "effects": [
+      "hypoglycemia_prolonged"
+    ]
+  },
+  "exenatide": {
+    "atc": "A10BJ01",
+    "class": "GLP1_agonist",
+    "effects": [
+      "GI_effects",
+      "weight_loss"
+    ]
+  },
+  "liraglutide": {
+    "atc": "A10BJ02",
+    "class": "GLP1_agonist",
+    "effects": [
+      "GI_effects",
+      "weight_loss"
+    ]
+  },
+  "lixisenatide": {
+    "atc": "A10BJ03",
+    "class": "GLP1_agonist",
+    "effects": [
+      "GI_effects",
+      "weight_loss"
+    ]
+  },
+  "albiglutide": {
+    "atc": "A10BJ04",
+    "class": "GLP1_agonist",
+    "effects": [
+      "GI_effects",
+      "weight_loss"
+    ]
+  },
+  "dulaglutide": {
+    "atc": "A10BJ05",
+    "class": "GLP1_agonist",
+    "effects": [
+      "GI_effects",
+      "weight_loss"
+    ]
+  },
+  "semaglutide": {
+    "atc": "A10BJ06",
+    "class": "GLP1_agonist",
+    "effects": [
+      "GI_effects",
+      "weight_loss"
+    ]
+  },
+  "beinaglutide": {
+    "atc": "A10BJ07",
+    "class": "GLP1_agonist",
+    "effects": [
+      "GI_effects",
+      "weight_loss"
+    ]
+  },
+  "dapagliflozin": {
+    "atc": "A10BK01",
+    "class": "SGLT2_inhibitor",
+    "effects": [
+      "DKA_risk",
+      "UTI_risk",
+      "nephroprotective"
+    ]
+  },
+  "canagliflozin": {
+    "atc": "A10BK02",
+    "class": "SGLT2_inhibitor",
+    "effects": [
+      "DKA_risk",
+      "UTI_risk",
+      "nephroprotective"
+    ]
+  },
+  "empagliflozin": {
+    "atc": "A10BK03",
+    "class": "SGLT2_inhibitor",
+    "effects": [
+      "DKA_risk",
+      "UTI_risk",
+      "nephroprotective"
+    ]
+  },
+  "ertugliflozin": {
+    "atc": "A10BK04",
+    "class": "SGLT2_inhibitor",
+    "effects": [
+      "DKA_risk",
+      "UTI_risk",
+      "nephroprotective"
+    ]
+  },
+  "ipragliflozin": {
+    "atc": "A10BK05",
+    "class": "SGLT2_inhibitor",
+    "effects": [
+      "DKA_risk",
+      "UTI_risk",
+      "nephroprotective"
+    ]
+  },
+  "sotagliflozin": {
+    "atc": "A10BK06",
+    "class": "SGLT2_inhibitor",
+    "effects": [
+      "DKA_risk",
+      "UTI_risk",
+      "nephroprotective"
+    ]
+  },
+  "luseogliflozin": {
+    "atc": "A10BK07",
+    "class": "SGLT2_inhibitor",
+    "effects": [
+      "DKA_risk",
+      "UTI_risk",
+      "nephroprotective"
+    ]
+  },
+  "dicoumarol": {
+    "atc": "B01AA01",
+    "class": "warfarin",
+    "effects": [
+      "anticoagulant",
+      "bleeding_risk"
+    ]
+  },
+  "phenindione": {
+    "atc": "B01AA02",
+    "class": "warfarin",
+    "effects": [
+      "anticoagulant",
+      "bleeding_risk"
+    ]
+  },
+  "warfarin": {
+    "atc": "B01AA03",
+    "class": "warfarin",
+    "effects": [
+      "anticoagulant",
+      "bleeding_risk"
+    ]
+  },
+  "phenprocoumon": {
+    "atc": "B01AA04",
+    "class": "warfarin",
+    "effects": [
+      "anticoagulant",
+      "bleeding_risk"
+    ]
+  },
+  "acenocoumarol": {
+    "atc": "B01AA07",
+    "class": "warfarin",
+    "effects": [
+      "anticoagulant",
+      "bleeding_risk"
+    ]
+  },
+  "ethyl biscoumacetate": {
+    "atc": "B01AA08",
+    "class": "warfarin",
+    "effects": [
+      "anticoagulant",
+      "bleeding_risk"
+    ]
+  },
+  "clorindione": {
+    "atc": "B01AA09",
+    "class": "warfarin",
+    "effects": [
+      "anticoagulant",
+      "bleeding_risk"
+    ]
+  },
+  "diphenadione": {
+    "atc": "B01AA10",
+    "class": "warfarin",
+    "effects": [
+      "anticoagulant",
+      "bleeding_risk"
+    ]
+  },
+  "tioclomarol": {
+    "atc": "B01AA11",
+    "class": "warfarin",
+    "effects": [
+      "anticoagulant",
+      "bleeding_risk"
+    ]
+  },
+  "fluindione": {
+    "atc": "B01AA12",
+    "class": "warfarin",
+    "effects": [
+      "anticoagulant",
+      "bleeding_risk"
+    ]
+  },
+  "ditazole": {
+    "atc": "B01AC01",
+    "class": "antiplatelet",
+    "effects": [
+      "antiplatelet",
+      "bleeding_risk"
+    ]
+  },
+  "cloricromen": {
+    "atc": "B01AC02",
+    "class": "antiplatelet",
+    "effects": [
+      "antiplatelet",
+      "bleeding_risk"
+    ]
+  },
+  "picotamide": {
+    "atc": "B01AC03",
+    "class": "antiplatelet",
+    "effects": [
+      "antiplatelet",
+      "bleeding_risk"
+    ]
+  },
+  "clopidogrel": {
+    "atc": "B01AC04",
+    "class": "antiplatelet",
+    "effects": [
+      "antiplatelet",
+      "bleeding_risk"
+    ]
+  },
+  "ticlopidine": {
+    "atc": "B01AC05",
+    "class": "antiplatelet",
+    "effects": [
+      "antiplatelet",
+      "bleeding_risk"
+    ]
+  },
+  "acetylsalicylic acid": {
+    "atc": "B01AC06",
+    "class": "antiplatelet",
+    "effects": [
+      "antiplatelet",
+      "bleeding_risk"
+    ]
+  },
+  "dipyridamole": {
+    "atc": "B01AC07",
+    "class": "antiplatelet",
+    "effects": [
+      "antiplatelet",
+      "bleeding_risk"
+    ]
+  },
+  "carbasalate calcium": {
+    "atc": "B01AC08",
+    "class": "antiplatelet",
+    "effects": [
+      "antiplatelet",
+      "bleeding_risk"
+    ]
+  },
+  "epoprostenol": {
+    "atc": "B01AC09",
+    "class": "antiplatelet",
+    "effects": [
+      "antiplatelet",
+      "bleeding_risk"
+    ]
+  },
+  "indobufen": {
+    "atc": "B01AC10",
+    "class": "antiplatelet",
+    "effects": [
+      "antiplatelet",
+      "bleeding_risk"
+    ]
+  },
+  "iloprost": {
+    "atc": "B01AC11",
+    "class": "antiplatelet",
+    "effects": [
+      "antiplatelet",
+      "bleeding_risk"
+    ]
+  },
+  "abciximab": {
+    "atc": "B01AC13",
+    "class": "antiplatelet",
+    "effects": [
+      "antiplatelet",
+      "bleeding_risk"
+    ]
+  },
+  "aloxiprin": {
+    "atc": "B01AC15",
+    "class": "antiplatelet",
+    "effects": [
+      "antiplatelet",
+      "bleeding_risk"
+    ]
+  },
+  "eptifibatide": {
+    "atc": "B01AC16",
+    "class": "antiplatelet",
+    "effects": [
+      "antiplatelet",
+      "bleeding_risk"
+    ]
+  },
+  "tirofiban": {
+    "atc": "B01AC17",
+    "class": "antiplatelet",
+    "effects": [
+      "antiplatelet",
+      "bleeding_risk"
+    ]
+  },
+  "triflusal": {
+    "atc": "B01AC18",
+    "class": "antiplatelet",
+    "effects": [
+      "antiplatelet",
+      "bleeding_risk"
+    ]
+  },
+  "beraprost": {
+    "atc": "B01AC19",
+    "class": "antiplatelet",
+    "effects": [
+      "antiplatelet",
+      "bleeding_risk"
+    ]
+  },
+  "treprostinil": {
+    "atc": "B01AC21",
+    "class": "antiplatelet",
+    "effects": [
+      "antiplatelet",
+      "bleeding_risk"
+    ]
+  },
+  "prasugrel": {
+    "atc": "B01AC22",
+    "class": "antiplatelet",
+    "effects": [
+      "antiplatelet",
+      "bleeding_risk"
+    ]
+  },
+  "cilostazol": {
+    "atc": "B01AC23",
+    "class": "antiplatelet",
+    "effects": [
+      "antiplatelet",
+      "bleeding_risk"
+    ]
+  },
+  "ticagrelor": {
+    "atc": "B01AC24",
+    "class": "antiplatelet",
+    "effects": [
+      "antiplatelet",
+      "bleeding_risk"
+    ]
+  },
+  "cangrelor": {
+    "atc": "B01AC25",
+    "class": "antiplatelet",
+    "effects": [
+      "antiplatelet",
+      "bleeding_risk"
+    ]
+  },
+  "vorapaxar": {
+    "atc": "B01AC26",
+    "class": "antiplatelet",
+    "effects": [
+      "antiplatelet",
+      "bleeding_risk"
+    ]
+  },
+  "selexipag": {
+    "atc": "B01AC27",
+    "class": "antiplatelet",
+    "effects": [
+      "antiplatelet",
+      "bleeding_risk"
+    ]
+  },
+  "combinations": {
+    "atc": "B01AC30",
+    "class": "antiplatelet",
+    "effects": [
+      "antiplatelet",
+      "bleeding_risk"
+    ]
+  },
+  "acetylsalicylic acid, combinations with proton pump inhibitors": {
+    "atc": "B01AC56",
+    "class": "antiplatelet",
+    "effects": [
+      "antiplatelet",
+      "bleeding_risk"
+    ]
+  },
+  "desirudin": {
+    "atc": "B01AE01",
+    "class": "DOAC",
+    "effects": [
+      "anticoagulant",
+      "bleeding_risk"
+    ]
+  },
+  "lepirudin": {
+    "atc": "B01AE02",
+    "class": "DOAC",
+    "effects": [
+      "anticoagulant",
+      "bleeding_risk"
+    ]
+  },
+  "argatroban": {
+    "atc": "B01AE03",
+    "class": "DOAC",
+    "effects": [
+      "anticoagulant",
+      "bleeding_risk"
+    ]
+  },
+  "melagatran": {
+    "atc": "B01AE04",
+    "class": "DOAC",
+    "effects": [
+      "anticoagulant",
+      "bleeding_risk"
+    ]
+  },
+  "ximelagatran": {
+    "atc": "B01AE05",
+    "class": "DOAC",
+    "effects": [
+      "anticoagulant",
+      "bleeding_risk"
+    ]
+  },
+  "bivalirudin": {
+    "atc": "B01AE06",
+    "class": "DOAC",
+    "effects": [
+      "anticoagulant",
+      "bleeding_risk"
+    ]
+  },
+  "dabigatran etexilate": {
+    "atc": "B01AE07",
+    "class": "DOAC",
+    "effects": [
+      "anticoagulant",
+      "bleeding_risk"
+    ]
+  },
+  "rivaroxaban": {
+    "atc": "B01AF01",
+    "class": "DOAC",
+    "effects": [
+      "anticoagulant",
+      "bleeding_risk"
+    ]
+  },
+  "apixaban": {
+    "atc": "B01AF02",
+    "class": "DOAC",
+    "effects": [
+      "anticoagulant",
+      "bleeding_risk"
+    ]
+  },
+  "edoxaban": {
+    "atc": "B01AF03",
+    "class": "DOAC",
+    "effects": [
+      "anticoagulant",
+      "bleeding_risk"
+    ]
+  },
+  "betrixaban": {
+    "atc": "B01AF04",
+    "class": "DOAC",
+    "effects": [
+      "anticoagulant",
+      "bleeding_risk"
+    ]
+  },
+  "amiodarone": {
+    "atc": "C01BD01",
+    "class": "antiarrhythmic_class3",
+    "effects": [
+      "QT_prolonging",
+      "bradycardic"
+    ]
+  },
+  "bretylium tosilate": {
+    "atc": "C01BD02",
+    "class": "antiarrhythmic_class3",
+    "effects": [
+      "QT_prolonging",
+      "bradycardic"
+    ]
+  },
+  "bunaftine": {
+    "atc": "C01BD03",
+    "class": "antiarrhythmic_class3",
+    "effects": [
+      "QT_prolonging",
+      "bradycardic"
+    ]
+  },
+  "dofetilide": {
+    "atc": "C01BD04",
+    "class": "antiarrhythmic_class3",
+    "effects": [
+      "QT_prolonging",
+      "bradycardic"
+    ]
+  },
+  "ibutilide": {
+    "atc": "C01BD05",
+    "class": "antiarrhythmic_class3",
+    "effects": [
+      "QT_prolonging",
+      "bradycardic"
+    ]
+  },
+  "tedisamil": {
+    "atc": "C01BD06",
+    "class": "antiarrhythmic_class3",
+    "effects": [
+      "QT_prolonging",
+      "bradycardic"
+    ]
+  },
+  "dronedarone": {
+    "atc": "C01BD07",
+    "class": "antiarrhythmic_class3",
+    "effects": [
+      "QT_prolonging",
+      "bradycardic"
+    ]
+  },
+  "bendroflumethiazide": {
+    "atc": "C03AA01",
+    "class": "thiazide_diuretic",
+    "effects": [
+      "hypotensive",
+      "hypokalemia_risk",
+      "hyperglycemia"
+    ]
+  },
+  "hydroflumethiazide": {
+    "atc": "C03AA02",
+    "class": "thiazide_diuretic",
+    "effects": [
+      "hypotensive",
+      "hypokalemia_risk",
+      "hyperglycemia"
+    ]
+  },
+  "hydrochlorothiazide": {
+    "atc": "C03AA03",
+    "class": "thiazide_diuretic",
+    "effects": [
+      "hypotensive",
+      "hypokalemia_risk",
+      "hyperglycemia"
+    ]
+  },
+  "chlorothiazide": {
+    "atc": "C03AA04",
+    "class": "thiazide_diuretic",
+    "effects": [
+      "hypotensive",
+      "hypokalemia_risk",
+      "hyperglycemia"
+    ]
+  },
+  "polythiazide": {
+    "atc": "C03AA05",
+    "class": "thiazide_diuretic",
+    "effects": [
+      "hypotensive",
+      "hypokalemia_risk",
+      "hyperglycemia"
+    ]
+  },
+  "trichlormethiazide": {
+    "atc": "C03AA06",
+    "class": "thiazide_diuretic",
+    "effects": [
+      "hypotensive",
+      "hypokalemia_risk",
+      "hyperglycemia"
+    ]
+  },
+  "cyclopenthiazide": {
+    "atc": "C03AA07",
+    "class": "thiazide_diuretic",
+    "effects": [
+      "hypotensive",
+      "hypokalemia_risk",
+      "hyperglycemia"
+    ]
+  },
+  "methyclothiazide": {
+    "atc": "C03AA08",
+    "class": "thiazide_diuretic",
+    "effects": [
+      "hypotensive",
+      "hypokalemia_risk",
+      "hyperglycemia"
+    ]
+  },
+  "cyclothiazide": {
+    "atc": "C03AA09",
+    "class": "thiazide_diuretic",
+    "effects": [
+      "hypotensive",
+      "hypokalemia_risk",
+      "hyperglycemia"
+    ]
+  },
+  "mebutizide": {
+    "atc": "C03AA13",
+    "class": "thiazide_diuretic",
+    "effects": [
+      "hypotensive",
+      "hypokalemia_risk",
+      "hyperglycemia"
+    ]
+  },
+  "furosemide": {
+    "atc": "C03CA01",
+    "class": "loop_diuretic",
+    "effects": [
+      "hypotensive",
+      "hypokalemia_risk",
+      "ototoxic"
+    ]
+  },
+  "bumetanide": {
+    "atc": "C03CA02",
+    "class": "loop_diuretic",
+    "effects": [
+      "hypotensive",
+      "hypokalemia_risk",
+      "ototoxic"
+    ]
+  },
+  "piretanide": {
+    "atc": "C03CA03",
+    "class": "loop_diuretic",
+    "effects": [
+      "hypotensive",
+      "hypokalemia_risk",
+      "ototoxic"
+    ]
+  },
+  "torasemide": {
+    "atc": "C03CA04",
+    "class": "loop_diuretic",
+    "effects": [
+      "hypotensive",
+      "hypokalemia_risk",
+      "ototoxic"
+    ]
+  },
+  "alprenolol": {
+    "atc": "C07AA01",
+    "class": "beta_blocker",
+    "effects": [
+      "bradycardic",
+      "hypotensive",
+      "bronchospasm_risk"
+    ]
+  },
+  "oxprenolol": {
+    "atc": "C07AA02",
+    "class": "beta_blocker",
+    "effects": [
+      "bradycardic",
+      "hypotensive",
+      "bronchospasm_risk"
+    ]
+  },
+  "pindolol": {
+    "atc": "C07AA03",
+    "class": "beta_blocker",
+    "effects": [
+      "bradycardic",
+      "hypotensive",
+      "bronchospasm_risk"
+    ]
+  },
+  "propranolol": {
+    "atc": "C07AA05",
+    "class": "beta_blocker",
+    "effects": [
+      "bradycardic",
+      "hypotensive",
+      "bronchospasm_risk"
+    ]
+  },
+  "timolol": {
+    "atc": "C07AA06",
+    "class": "beta_blocker",
+    "effects": [
+      "bradycardic",
+      "hypotensive",
+      "bronchospasm_risk"
+    ]
+  },
+  "sotalol": {
+    "atc": "C07AA07",
+    "class": "beta_blocker",
+    "effects": [
+      "bradycardic",
+      "hypotensive",
+      "bronchospasm_risk"
+    ]
+  },
+  "nadolol": {
+    "atc": "C07AA12",
+    "class": "beta_blocker",
+    "effects": [
+      "bradycardic",
+      "hypotensive",
+      "bronchospasm_risk"
+    ]
+  },
+  "mepindolol": {
+    "atc": "C07AA14",
+    "class": "beta_blocker",
+    "effects": [
+      "bradycardic",
+      "hypotensive",
+      "bronchospasm_risk"
+    ]
+  },
+  "carteolol": {
+    "atc": "C07AA15",
+    "class": "beta_blocker",
+    "effects": [
+      "bradycardic",
+      "hypotensive",
+      "bronchospasm_risk"
+    ]
+  },
+  "tertatolol": {
+    "atc": "C07AA16",
+    "class": "beta_blocker",
+    "effects": [
+      "bradycardic",
+      "hypotensive",
+      "bronchospasm_risk"
+    ]
+  },
+  "bopindolol": {
+    "atc": "C07AA17",
+    "class": "beta_blocker",
+    "effects": [
+      "bradycardic",
+      "hypotensive",
+      "bronchospasm_risk"
+    ]
+  },
+  "bupranolol": {
+    "atc": "C07AA19",
+    "class": "beta_blocker",
+    "effects": [
+      "bradycardic",
+      "hypotensive",
+      "bronchospasm_risk"
+    ]
+  },
+  "penbutolol": {
+    "atc": "C07AA23",
+    "class": "beta_blocker",
+    "effects": [
+      "bradycardic",
+      "hypotensive",
+      "bronchospasm_risk"
+    ]
+  },
+  "cloranolol": {
+    "atc": "C07AA27",
+    "class": "beta_blocker",
+    "effects": [
+      "bradycardic",
+      "hypotensive",
+      "bronchospasm_risk"
+    ]
+  },
+  "practolol": {
+    "atc": "C07AB01",
+    "class": "beta_blocker",
+    "effects": [
+      "bradycardic",
+      "hypotensive",
+      "bronchospasm_risk"
+    ]
+  },
+  "metoprolol": {
+    "atc": "C07AB02",
+    "class": "beta_blocker",
+    "effects": [
+      "bradycardic",
+      "hypotensive",
+      "bronchospasm_risk"
+    ]
+  },
+  "atenolol": {
+    "atc": "C07AB03",
+    "class": "beta_blocker",
+    "effects": [
+      "bradycardic",
+      "hypotensive",
+      "bronchospasm_risk"
+    ]
+  },
+  "acebutolol": {
+    "atc": "C07AB04",
+    "class": "beta_blocker",
+    "effects": [
+      "bradycardic",
+      "hypotensive",
+      "bronchospasm_risk"
+    ]
+  },
+  "betaxolol": {
+    "atc": "C07AB05",
+    "class": "beta_blocker",
+    "effects": [
+      "bradycardic",
+      "hypotensive",
+      "bronchospasm_risk"
+    ]
+  },
+  "bevantolol": {
+    "atc": "C07AB06",
+    "class": "beta_blocker",
+    "effects": [
+      "bradycardic",
+      "hypotensive",
+      "bronchospasm_risk"
+    ]
+  },
+  "bisoprolol": {
+    "atc": "C07AB07",
+    "class": "beta_blocker",
+    "effects": [
+      "bradycardic",
+      "hypotensive",
+      "bronchospasm_risk"
+    ]
+  },
+  "celiprolol": {
+    "atc": "C07AB08",
+    "class": "beta_blocker",
+    "effects": [
+      "bradycardic",
+      "hypotensive",
+      "bronchospasm_risk"
+    ]
+  },
+  "esmolol": {
+    "atc": "C07AB09",
+    "class": "beta_blocker",
+    "effects": [
+      "bradycardic",
+      "hypotensive",
+      "bronchospasm_risk"
+    ]
+  },
+  "epanolol": {
+    "atc": "C07AB10",
+    "class": "beta_blocker",
+    "effects": [
+      "bradycardic",
+      "hypotensive",
+      "bronchospasm_risk"
+    ]
+  },
+  "s-atenolol": {
+    "atc": "C07AB11",
+    "class": "beta_blocker",
+    "effects": [
+      "bradycardic",
+      "hypotensive",
+      "bronchospasm_risk"
+    ]
+  },
+  "nebivolol": {
+    "atc": "C07AB12",
+    "class": "beta_blocker",
+    "effects": [
+      "bradycardic",
+      "hypotensive",
+      "bronchospasm_risk"
+    ]
+  },
+  "talinolol": {
+    "atc": "C07AB13",
+    "class": "beta_blocker",
+    "effects": [
+      "bradycardic",
+      "hypotensive",
+      "bronchospasm_risk"
+    ]
+  },
+  "landiolol": {
+    "atc": "C07AB14",
+    "class": "beta_blocker",
+    "effects": [
+      "bradycardic",
+      "hypotensive",
+      "bronchospasm_risk"
+    ]
+  },
+  "amlodipine": {
+    "atc": "C08CA01",
+    "class": "CCB_dihydropyridine",
+    "effects": [
+      "hypotensive",
+      "edema_risk"
+    ]
+  },
+  "felodipine": {
+    "atc": "C08CA02",
+    "class": "CCB_dihydropyridine",
+    "effects": [
+      "hypotensive",
+      "edema_risk"
+    ]
+  },
+  "isradipine": {
+    "atc": "C08CA03",
+    "class": "CCB_dihydropyridine",
+    "effects": [
+      "hypotensive",
+      "edema_risk"
+    ]
+  },
+  "nicardipine": {
+    "atc": "C08CA04",
+    "class": "CCB_dihydropyridine",
+    "effects": [
+      "hypotensive",
+      "edema_risk"
+    ]
+  },
+  "nifedipine": {
+    "atc": "C08CA05",
+    "class": "CCB_dihydropyridine",
+    "effects": [
+      "hypotensive",
+      "edema_risk"
+    ]
+  },
+  "nimodipine": {
+    "atc": "C08CA06",
+    "class": "CCB_dihydropyridine",
+    "effects": [
+      "hypotensive",
+      "edema_risk"
+    ]
+  },
+  "nisoldipine": {
+    "atc": "C08CA07",
+    "class": "CCB_dihydropyridine",
+    "effects": [
+      "hypotensive",
+      "edema_risk"
+    ]
+  },
+  "nitrendipine": {
+    "atc": "C08CA08",
+    "class": "CCB_dihydropyridine",
+    "effects": [
+      "hypotensive",
+      "edema_risk"
+    ]
+  },
+  "lacidipine": {
+    "atc": "C08CA09",
+    "class": "CCB_dihydropyridine",
+    "effects": [
+      "hypotensive",
+      "edema_risk"
+    ]
+  },
+  "nilvadipine": {
+    "atc": "C08CA10",
+    "class": "CCB_dihydropyridine",
+    "effects": [
+      "hypotensive",
+      "edema_risk"
+    ]
+  },
+  "manidipine": {
+    "atc": "C08CA11",
+    "class": "CCB_dihydropyridine",
+    "effects": [
+      "hypotensive",
+      "edema_risk"
+    ]
+  },
+  "barnidipine": {
+    "atc": "C08CA12",
+    "class": "CCB_dihydropyridine",
+    "effects": [
+      "hypotensive",
+      "edema_risk"
+    ]
+  },
+  "lercanidipine": {
+    "atc": "C08CA13",
+    "class": "CCB_dihydropyridine",
+    "effects": [
+      "hypotensive",
+      "edema_risk"
+    ]
+  },
+  "cilnidipine": {
+    "atc": "C08CA14",
+    "class": "CCB_dihydropyridine",
+    "effects": [
+      "hypotensive",
+      "edema_risk"
+    ]
+  },
+  "benidipine": {
+    "atc": "C08CA15",
+    "class": "CCB_dihydropyridine",
+    "effects": [
+      "hypotensive",
+      "edema_risk"
+    ]
+  },
+  "clevidipine": {
+    "atc": "C08CA16",
+    "class": "CCB_dihydropyridine",
+    "effects": [
+      "hypotensive",
+      "edema_risk"
+    ]
+  },
+  "amlodipine and celecoxib": {
+    "atc": "C08CA51",
+    "class": "CCB_dihydropyridine",
+    "effects": [
+      "hypotensive",
+      "edema_risk"
+    ]
+  },
+  "nifedipine, combinations": {
+    "atc": "C08CA55",
+    "class": "CCB_dihydropyridine",
+    "effects": [
+      "hypotensive",
+      "edema_risk"
+    ]
+  },
+  "verapamil": {
+    "atc": "C08DA01",
+    "class": "CCB_nondihydropyridine",
+    "effects": [
+      "bradycardic",
+      "hypotensive"
+    ]
+  },
+  "gallopamil": {
+    "atc": "C08DA02",
+    "class": "CCB_nondihydropyridine",
+    "effects": [
+      "bradycardic",
+      "hypotensive"
+    ]
+  },
+  "verapamil, combinations": {
+    "atc": "C08DA51",
+    "class": "CCB_nondihydropyridine",
+    "effects": [
+      "bradycardic",
+      "hypotensive"
+    ]
+  },
+  "captopril": {
+    "atc": "C09AA01",
+    "class": "ACE_inhibitor",
+    "effects": [
+      "hypotensive",
+      "hyperkalemia_risk",
+      "nephroprotective"
+    ]
+  },
+  "enalapril": {
+    "atc": "C09AA02",
+    "class": "ACE_inhibitor",
+    "effects": [
+      "hypotensive",
+      "hyperkalemia_risk",
+      "nephroprotective"
+    ]
+  },
+  "lisinopril": {
+    "atc": "C09AA03",
+    "class": "ACE_inhibitor",
+    "effects": [
+      "hypotensive",
+      "hyperkalemia_risk",
+      "nephroprotective"
+    ]
+  },
+  "perindopril": {
+    "atc": "C09AA04",
+    "class": "ACE_inhibitor",
+    "effects": [
+      "hypotensive",
+      "hyperkalemia_risk",
+      "nephroprotective"
+    ]
+  },
+  "ramipril": {
+    "atc": "C09AA05",
+    "class": "ACE_inhibitor",
+    "effects": [
+      "hypotensive",
+      "hyperkalemia_risk",
+      "nephroprotective"
+    ]
+  },
+  "quinapril": {
+    "atc": "C09AA06",
+    "class": "ACE_inhibitor",
+    "effects": [
+      "hypotensive",
+      "hyperkalemia_risk",
+      "nephroprotective"
+    ]
+  },
+  "benazepril": {
+    "atc": "C09AA07",
+    "class": "ACE_inhibitor",
+    "effects": [
+      "hypotensive",
+      "hyperkalemia_risk",
+      "nephroprotective"
+    ]
+  },
+  "cilazapril": {
+    "atc": "C09AA08",
+    "class": "ACE_inhibitor",
+    "effects": [
+      "hypotensive",
+      "hyperkalemia_risk",
+      "nephroprotective"
+    ]
+  },
+  "fosinopril": {
+    "atc": "C09AA09",
+    "class": "ACE_inhibitor",
+    "effects": [
+      "hypotensive",
+      "hyperkalemia_risk",
+      "nephroprotective"
+    ]
+  },
+  "trandolapril": {
+    "atc": "C09AA10",
+    "class": "ACE_inhibitor",
+    "effects": [
+      "hypotensive",
+      "hyperkalemia_risk",
+      "nephroprotective"
+    ]
+  },
+  "spirapril": {
+    "atc": "C09AA11",
+    "class": "ACE_inhibitor",
+    "effects": [
+      "hypotensive",
+      "hyperkalemia_risk",
+      "nephroprotective"
+    ]
+  },
+  "delapril": {
+    "atc": "C09AA12",
+    "class": "ACE_inhibitor",
+    "effects": [
+      "hypotensive",
+      "hyperkalemia_risk",
+      "nephroprotective"
+    ]
+  },
+  "moexipril": {
+    "atc": "C09AA13",
+    "class": "ACE_inhibitor",
+    "effects": [
+      "hypotensive",
+      "hyperkalemia_risk",
+      "nephroprotective"
+    ]
+  },
+  "temocapril": {
+    "atc": "C09AA14",
+    "class": "ACE_inhibitor",
+    "effects": [
+      "hypotensive",
+      "hyperkalemia_risk",
+      "nephroprotective"
+    ]
+  },
+  "zofenopril": {
+    "atc": "C09AA15",
+    "class": "ACE_inhibitor",
+    "effects": [
+      "hypotensive",
+      "hyperkalemia_risk",
+      "nephroprotective"
+    ]
+  },
+  "imidapril": {
+    "atc": "C09AA16",
+    "class": "ACE_inhibitor",
+    "effects": [
+      "hypotensive",
+      "hyperkalemia_risk",
+      "nephroprotective"
+    ]
+  },
+  "losartan": {
+    "atc": "C09CA01",
+    "class": "ARB",
+    "effects": [
+      "hypotensive",
+      "hyperkalemia_risk",
+      "nephroprotective"
+    ]
+  },
+  "eprosartan": {
+    "atc": "C09CA02",
+    "class": "ARB",
+    "effects": [
+      "hypotensive",
+      "hyperkalemia_risk",
+      "nephroprotective"
+    ]
+  },
+  "valsartan": {
+    "atc": "C09CA03",
+    "class": "ARB",
+    "effects": [
+      "hypotensive",
+      "hyperkalemia_risk",
+      "nephroprotective"
+    ]
+  },
+  "irbesartan": {
+    "atc": "C09CA04",
+    "class": "ARB",
+    "effects": [
+      "hypotensive",
+      "hyperkalemia_risk",
+      "nephroprotective"
+    ]
+  },
+  "tasosartan": {
+    "atc": "C09CA05",
+    "class": "ARB",
+    "effects": [
+      "hypotensive",
+      "hyperkalemia_risk",
+      "nephroprotective"
+    ]
+  },
+  "candesartan": {
+    "atc": "C09CA06",
+    "class": "ARB",
+    "effects": [
+      "hypotensive",
+      "hyperkalemia_risk",
+      "nephroprotective"
+    ]
+  },
+  "telmisartan": {
+    "atc": "C09CA07",
+    "class": "ARB",
+    "effects": [
+      "hypotensive",
+      "hyperkalemia_risk",
+      "nephroprotective"
+    ]
+  },
+  "olmesartan medoxomil": {
+    "atc": "C09CA08",
+    "class": "ARB",
+    "effects": [
+      "hypotensive",
+      "hyperkalemia_risk",
+      "nephroprotective"
+    ]
+  },
+  "azilsartan medoxomil": {
+    "atc": "C09CA09",
+    "class": "ARB",
+    "effects": [
+      "hypotensive",
+      "hyperkalemia_risk",
+      "nephroprotective"
+    ]
+  },
+  "fimasartan": {
+    "atc": "C09CA10",
+    "class": "ARB",
+    "effects": [
+      "hypotensive",
+      "hyperkalemia_risk",
+      "nephroprotective"
+    ]
+  },
+  "erythromycin": {
+    "atc": "J01FA01",
+    "class": "macrolide",
+    "effects": [
+      "QT_prolonging"
+    ]
+  },
+  "spiramycin": {
+    "atc": "J01FA02",
+    "class": "macrolide",
+    "effects": [
+      "QT_prolonging"
+    ]
+  },
+  "midecamycin": {
+    "atc": "J01FA03",
+    "class": "macrolide",
+    "effects": [
+      "QT_prolonging"
+    ]
+  },
+  "oleandomycin": {
+    "atc": "J01FA05",
+    "class": "macrolide",
+    "effects": [
+      "QT_prolonging"
+    ]
+  },
+  "roxithromycin": {
+    "atc": "J01FA06",
+    "class": "macrolide",
+    "effects": [
+      "QT_prolonging"
+    ]
+  },
+  "josamycin": {
+    "atc": "J01FA07",
+    "class": "macrolide",
+    "effects": [
+      "QT_prolonging"
+    ]
+  },
+  "troleandomycin": {
+    "atc": "J01FA08",
+    "class": "macrolide",
+    "effects": [
+      "QT_prolonging"
+    ]
+  },
+  "clarithromycin": {
+    "atc": "J01FA09",
+    "class": "macrolide",
+    "effects": [
+      "QT_prolonging"
+    ]
+  },
+  "azithromycin": {
+    "atc": "J01FA10",
+    "class": "macrolide",
+    "effects": [
+      "QT_prolonging"
+    ]
+  },
+  "miocamycin": {
+    "atc": "J01FA11",
+    "class": "macrolide",
+    "effects": [
+      "QT_prolonging"
+    ]
+  },
+  "rokitamycin": {
+    "atc": "J01FA12",
+    "class": "macrolide",
+    "effects": [
+      "QT_prolonging"
+    ]
+  },
+  "dirithromycin": {
+    "atc": "J01FA13",
+    "class": "macrolide",
+    "effects": [
+      "QT_prolonging"
+    ]
+  },
+  "flurithromycin": {
+    "atc": "J01FA14",
+    "class": "macrolide",
+    "effects": [
+      "QT_prolonging"
+    ]
+  },
+  "telithromycin": {
+    "atc": "J01FA15",
+    "class": "macrolide",
+    "effects": [
+      "QT_prolonging"
+    ]
+  },
+  "solithromycin": {
+    "atc": "J01FA16",
+    "class": "macrolide",
+    "effects": [
+      "QT_prolonging"
+    ]
+  },
+  "ofloxacin": {
+    "atc": "J01MA01",
+    "class": "fluoroquinolone",
+    "effects": [
+      "QT_prolonging",
+      "tendon_rupture_risk",
+      "seizure_lowering"
+    ]
+  },
+  "ciprofloxacin": {
+    "atc": "J01MA02",
+    "class": "fluoroquinolone",
+    "effects": [
+      "QT_prolonging",
+      "tendon_rupture_risk",
+      "seizure_lowering"
+    ]
+  },
+  "pefloxacin": {
+    "atc": "J01MA03",
+    "class": "fluoroquinolone",
+    "effects": [
+      "QT_prolonging",
+      "tendon_rupture_risk",
+      "seizure_lowering"
+    ]
+  },
+  "enoxacin": {
+    "atc": "J01MA04",
+    "class": "fluoroquinolone",
+    "effects": [
+      "QT_prolonging",
+      "tendon_rupture_risk",
+      "seizure_lowering"
+    ]
+  },
+  "temafloxacin": {
+    "atc": "J01MA05",
+    "class": "fluoroquinolone",
+    "effects": [
+      "QT_prolonging",
+      "tendon_rupture_risk",
+      "seizure_lowering"
+    ]
+  },
+  "norfloxacin": {
+    "atc": "J01MA06",
+    "class": "fluoroquinolone",
+    "effects": [
+      "QT_prolonging",
+      "tendon_rupture_risk",
+      "seizure_lowering"
+    ]
+  },
+  "lomefloxacin": {
+    "atc": "J01MA07",
+    "class": "fluoroquinolone",
+    "effects": [
+      "QT_prolonging",
+      "tendon_rupture_risk",
+      "seizure_lowering"
+    ]
+  },
+  "fleroxacin": {
+    "atc": "J01MA08",
+    "class": "fluoroquinolone",
+    "effects": [
+      "QT_prolonging",
+      "tendon_rupture_risk",
+      "seizure_lowering"
+    ]
+  },
+  "sparfloxacin": {
+    "atc": "J01MA09",
+    "class": "fluoroquinolone",
+    "effects": [
+      "QT_prolonging",
+      "tendon_rupture_risk",
+      "seizure_lowering"
+    ]
+  },
+  "rufloxacin": {
+    "atc": "J01MA10",
+    "class": "fluoroquinolone",
+    "effects": [
+      "QT_prolonging",
+      "tendon_rupture_risk",
+      "seizure_lowering"
+    ]
+  },
+  "grepafloxacin": {
+    "atc": "J01MA11",
+    "class": "fluoroquinolone",
+    "effects": [
+      "QT_prolonging",
+      "tendon_rupture_risk",
+      "seizure_lowering"
+    ]
+  },
+  "levofloxacin": {
+    "atc": "J01MA12",
+    "class": "fluoroquinolone",
+    "effects": [
+      "QT_prolonging",
+      "tendon_rupture_risk",
+      "seizure_lowering"
+    ]
+  },
+  "trovafloxacin": {
+    "atc": "J01MA13",
+    "class": "fluoroquinolone",
+    "effects": [
+      "QT_prolonging",
+      "tendon_rupture_risk",
+      "seizure_lowering"
+    ]
+  },
+  "moxifloxacin": {
+    "atc": "J01MA14",
+    "class": "fluoroquinolone",
+    "effects": [
+      "QT_prolonging",
+      "tendon_rupture_risk",
+      "seizure_lowering"
+    ]
+  },
+  "gemifloxacin": {
+    "atc": "J01MA15",
+    "class": "fluoroquinolone",
+    "effects": [
+      "QT_prolonging",
+      "tendon_rupture_risk",
+      "seizure_lowering"
+    ]
+  },
+  "gatifloxacin": {
+    "atc": "J01MA16",
+    "class": "fluoroquinolone",
+    "effects": [
+      "QT_prolonging",
+      "tendon_rupture_risk",
+      "seizure_lowering"
+    ]
+  },
+  "prulifloxacin": {
+    "atc": "J01MA17",
+    "class": "fluoroquinolone",
+    "effects": [
+      "QT_prolonging",
+      "tendon_rupture_risk",
+      "seizure_lowering"
+    ]
+  },
+  "pazufloxacin": {
+    "atc": "J01MA18",
+    "class": "fluoroquinolone",
+    "effects": [
+      "QT_prolonging",
+      "tendon_rupture_risk",
+      "seizure_lowering"
+    ]
+  },
+  "garenoxacin": {
+    "atc": "J01MA19",
+    "class": "fluoroquinolone",
+    "effects": [
+      "QT_prolonging",
+      "tendon_rupture_risk",
+      "seizure_lowering"
+    ]
+  },
+  "sitafloxacin": {
+    "atc": "J01MA21",
+    "class": "fluoroquinolone",
+    "effects": [
+      "QT_prolonging",
+      "tendon_rupture_risk",
+      "seizure_lowering"
+    ]
+  },
+  "tosufloxacin": {
+    "atc": "J01MA22",
+    "class": "fluoroquinolone",
+    "effects": [
+      "QT_prolonging",
+      "tendon_rupture_risk",
+      "seizure_lowering"
+    ]
+  },
+  "delafloxacin": {
+    "atc": "J01MA23",
+    "class": "fluoroquinolone",
+    "effects": [
+      "QT_prolonging",
+      "tendon_rupture_risk",
+      "seizure_lowering"
+    ]
+  },
+  "levonadifloxacin": {
+    "atc": "J01MA24",
+    "class": "fluoroquinolone",
+    "effects": [
+      "QT_prolonging",
+      "tendon_rupture_risk",
+      "seizure_lowering"
+    ]
+  },
+  "lascufloxacin": {
+    "atc": "J01MA25",
+    "class": "fluoroquinolone",
+    "effects": [
+      "QT_prolonging",
+      "tendon_rupture_risk",
+      "seizure_lowering"
+    ]
+  },
+  "indometacin": {
+    "atc": "M01AB01",
+    "class": "NSAID",
+    "effects": [
+      "GI_bleeding",
+      "nephrotoxic",
+      "fluid_retention",
+      "antiplatelet"
+    ]
+  },
+  "sulindac": {
+    "atc": "M01AB02",
+    "class": "NSAID",
+    "effects": [
+      "GI_bleeding",
+      "nephrotoxic",
+      "fluid_retention",
+      "antiplatelet"
+    ]
+  },
+  "tolmetin": {
+    "atc": "M01AB03",
+    "class": "NSAID",
+    "effects": [
+      "GI_bleeding",
+      "nephrotoxic",
+      "fluid_retention",
+      "antiplatelet"
+    ]
+  },
+  "zomepirac": {
+    "atc": "M01AB04",
+    "class": "NSAID",
+    "effects": [
+      "GI_bleeding",
+      "nephrotoxic",
+      "fluid_retention",
+      "antiplatelet"
+    ]
+  },
+  "diclofenac": {
+    "atc": "M01AB05",
+    "class": "NSAID",
+    "effects": [
+      "GI_bleeding",
+      "nephrotoxic",
+      "fluid_retention",
+      "antiplatelet"
+    ]
+  },
+  "alclofenac": {
+    "atc": "M01AB06",
+    "class": "NSAID",
+    "effects": [
+      "GI_bleeding",
+      "nephrotoxic",
+      "fluid_retention",
+      "antiplatelet"
+    ]
+  },
+  "bumadizone": {
+    "atc": "M01AB07",
+    "class": "NSAID",
+    "effects": [
+      "GI_bleeding",
+      "nephrotoxic",
+      "fluid_retention",
+      "antiplatelet"
+    ]
+  },
+  "etodolac": {
+    "atc": "M01AB08",
+    "class": "NSAID",
+    "effects": [
+      "GI_bleeding",
+      "nephrotoxic",
+      "fluid_retention",
+      "antiplatelet"
+    ]
+  },
+  "lonazolac": {
+    "atc": "M01AB09",
+    "class": "NSAID",
+    "effects": [
+      "GI_bleeding",
+      "nephrotoxic",
+      "fluid_retention",
+      "antiplatelet"
+    ]
+  },
+  "fentiazac": {
+    "atc": "M01AB10",
+    "class": "NSAID",
+    "effects": [
+      "GI_bleeding",
+      "nephrotoxic",
+      "fluid_retention",
+      "antiplatelet"
+    ]
+  },
+  "acemetacin": {
+    "atc": "M01AB11",
+    "class": "NSAID",
+    "effects": [
+      "GI_bleeding",
+      "nephrotoxic",
+      "fluid_retention",
+      "antiplatelet"
+    ]
+  },
+  "difenpiramide": {
+    "atc": "M01AB12",
+    "class": "NSAID",
+    "effects": [
+      "GI_bleeding",
+      "nephrotoxic",
+      "fluid_retention",
+      "antiplatelet"
+    ]
+  },
+  "oxametacin": {
+    "atc": "M01AB13",
+    "class": "NSAID",
+    "effects": [
+      "GI_bleeding",
+      "nephrotoxic",
+      "fluid_retention",
+      "antiplatelet"
+    ]
+  },
+  "proglumetacin": {
+    "atc": "M01AB14",
+    "class": "NSAID",
+    "effects": [
+      "GI_bleeding",
+      "nephrotoxic",
+      "fluid_retention",
+      "antiplatelet"
+    ]
+  },
+  "ketorolac": {
+    "atc": "M01AB15",
+    "class": "NSAID",
+    "effects": [
+      "GI_bleeding",
+      "nephrotoxic",
+      "fluid_retention",
+      "antiplatelet"
+    ]
+  },
+  "aceclofenac": {
+    "atc": "M01AB16",
+    "class": "NSAID",
+    "effects": [
+      "GI_bleeding",
+      "nephrotoxic",
+      "fluid_retention",
+      "antiplatelet"
+    ]
+  },
+  "bufexamac": {
+    "atc": "M01AB17",
+    "class": "NSAID",
+    "effects": [
+      "GI_bleeding",
+      "nephrotoxic",
+      "fluid_retention",
+      "antiplatelet"
+    ]
+  },
+  "indometacin, combinations": {
+    "atc": "M01AB51",
+    "class": "NSAID",
+    "effects": [
+      "GI_bleeding",
+      "nephrotoxic",
+      "fluid_retention",
+      "antiplatelet"
+    ]
+  },
+  "diclofenac, combinations": {
+    "atc": "M01AB55",
+    "class": "NSAID",
+    "effects": [
+      "GI_bleeding",
+      "nephrotoxic",
+      "fluid_retention",
+      "antiplatelet"
+    ]
+  },
+  "piroxicam": {
+    "atc": "M01AC01",
+    "class": "NSAID",
+    "effects": [
+      "GI_bleeding",
+      "nephrotoxic",
+      "fluid_retention",
+      "antiplatelet"
+    ]
+  },
+  "tenoxicam": {
+    "atc": "M01AC02",
+    "class": "NSAID",
+    "effects": [
+      "GI_bleeding",
+      "nephrotoxic",
+      "fluid_retention",
+      "antiplatelet"
+    ]
+  },
+  "droxicam": {
+    "atc": "M01AC04",
+    "class": "NSAID",
+    "effects": [
+      "GI_bleeding",
+      "nephrotoxic",
+      "fluid_retention",
+      "antiplatelet"
+    ]
+  },
+  "lornoxicam": {
+    "atc": "M01AC05",
+    "class": "NSAID",
+    "effects": [
+      "GI_bleeding",
+      "nephrotoxic",
+      "fluid_retention",
+      "antiplatelet"
+    ]
+  },
+  "meloxicam": {
+    "atc": "M01AC06",
+    "class": "NSAID",
+    "effects": [
+      "GI_bleeding",
+      "nephrotoxic",
+      "fluid_retention",
+      "antiplatelet"
+    ]
+  },
+  "meloxicam, combinations": {
+    "atc": "M01AC56",
+    "class": "NSAID",
+    "effects": [
+      "GI_bleeding",
+      "nephrotoxic",
+      "fluid_retention",
+      "antiplatelet"
+    ]
+  },
+  "ibuprofen": {
+    "atc": "M01AE01",
+    "class": "NSAID",
+    "effects": [
+      "GI_bleeding",
+      "nephrotoxic",
+      "fluid_retention",
+      "antiplatelet"
+    ]
+  },
+  "naproxen": {
+    "atc": "M01AE02",
+    "class": "NSAID",
+    "effects": [
+      "GI_bleeding",
+      "nephrotoxic",
+      "fluid_retention",
+      "antiplatelet"
+    ]
+  },
+  "ketoprofen": {
+    "atc": "M01AE03",
+    "class": "NSAID",
+    "effects": [
+      "GI_bleeding",
+      "nephrotoxic",
+      "fluid_retention",
+      "antiplatelet"
+    ]
+  },
+  "fenoprofen": {
+    "atc": "M01AE04",
+    "class": "NSAID",
+    "effects": [
+      "GI_bleeding",
+      "nephrotoxic",
+      "fluid_retention",
+      "antiplatelet"
+    ]
+  },
+  "fenbufen": {
+    "atc": "M01AE05",
+    "class": "NSAID",
+    "effects": [
+      "GI_bleeding",
+      "nephrotoxic",
+      "fluid_retention",
+      "antiplatelet"
+    ]
+  },
+  "benoxaprofen": {
+    "atc": "M01AE06",
+    "class": "NSAID",
+    "effects": [
+      "GI_bleeding",
+      "nephrotoxic",
+      "fluid_retention",
+      "antiplatelet"
+    ]
+  },
+  "suprofen": {
+    "atc": "M01AE07",
+    "class": "NSAID",
+    "effects": [
+      "GI_bleeding",
+      "nephrotoxic",
+      "fluid_retention",
+      "antiplatelet"
+    ]
+  },
+  "pirprofen": {
+    "atc": "M01AE08",
+    "class": "NSAID",
+    "effects": [
+      "GI_bleeding",
+      "nephrotoxic",
+      "fluid_retention",
+      "antiplatelet"
+    ]
+  },
+  "flurbiprofen": {
+    "atc": "M01AE09",
+    "class": "NSAID",
+    "effects": [
+      "GI_bleeding",
+      "nephrotoxic",
+      "fluid_retention",
+      "antiplatelet"
+    ]
+  },
+  "indoprofen": {
+    "atc": "M01AE10",
+    "class": "NSAID",
+    "effects": [
+      "GI_bleeding",
+      "nephrotoxic",
+      "fluid_retention",
+      "antiplatelet"
+    ]
+  },
+  "tiaprofenic acid": {
+    "atc": "M01AE11",
+    "class": "NSAID",
+    "effects": [
+      "GI_bleeding",
+      "nephrotoxic",
+      "fluid_retention",
+      "antiplatelet"
+    ]
+  },
+  "oxaprozin": {
+    "atc": "M01AE12",
+    "class": "NSAID",
+    "effects": [
+      "GI_bleeding",
+      "nephrotoxic",
+      "fluid_retention",
+      "antiplatelet"
+    ]
+  },
+  "ibuproxam": {
+    "atc": "M01AE13",
+    "class": "NSAID",
+    "effects": [
+      "GI_bleeding",
+      "nephrotoxic",
+      "fluid_retention",
+      "antiplatelet"
+    ]
+  },
+  "dexibuprofen": {
+    "atc": "M01AE14",
+    "class": "NSAID",
+    "effects": [
+      "GI_bleeding",
+      "nephrotoxic",
+      "fluid_retention",
+      "antiplatelet"
+    ]
+  },
+  "flunoxaprofen": {
+    "atc": "M01AE15",
+    "class": "NSAID",
+    "effects": [
+      "GI_bleeding",
+      "nephrotoxic",
+      "fluid_retention",
+      "antiplatelet"
+    ]
+  },
+  "alminoprofen": {
+    "atc": "M01AE16",
+    "class": "NSAID",
+    "effects": [
+      "GI_bleeding",
+      "nephrotoxic",
+      "fluid_retention",
+      "antiplatelet"
+    ]
+  },
+  "dexketoprofen": {
+    "atc": "M01AE17",
+    "class": "NSAID",
+    "effects": [
+      "GI_bleeding",
+      "nephrotoxic",
+      "fluid_retention",
+      "antiplatelet"
+    ]
+  },
+  "naproxcinod": {
+    "atc": "M01AE18",
+    "class": "NSAID",
+    "effects": [
+      "GI_bleeding",
+      "nephrotoxic",
+      "fluid_retention",
+      "antiplatelet"
+    ]
+  },
+  "ibuprofen, combinations": {
+    "atc": "M01AE51",
+    "class": "NSAID",
+    "effects": [
+      "GI_bleeding",
+      "nephrotoxic",
+      "fluid_retention",
+      "antiplatelet"
+    ]
+  },
+  "naproxen and esomeprazole": {
+    "atc": "M01AE52",
+    "class": "NSAID",
+    "effects": [
+      "GI_bleeding",
+      "nephrotoxic",
+      "fluid_retention",
+      "antiplatelet"
+    ]
+  },
+  "ketoprofen, combinations": {
+    "atc": "M01AE53",
+    "class": "NSAID",
+    "effects": [
+      "GI_bleeding",
+      "nephrotoxic",
+      "fluid_retention",
+      "antiplatelet"
+    ]
+  },
+  "naproxen and misoprostol": {
+    "atc": "M01AE56",
+    "class": "NSAID",
+    "effects": [
+      "GI_bleeding",
+      "nephrotoxic",
+      "fluid_retention",
+      "antiplatelet"
+    ]
+  },
+  "mefenamic acid": {
+    "atc": "M01AG01",
+    "class": "NSAID",
+    "effects": [
+      "GI_bleeding",
+      "nephrotoxic",
+      "fluid_retention",
+      "antiplatelet"
+    ]
+  },
+  "tolfenamic acid": {
+    "atc": "M01AG02",
+    "class": "NSAID",
+    "effects": [
+      "GI_bleeding",
+      "nephrotoxic",
+      "fluid_retention",
+      "antiplatelet"
+    ]
+  },
+  "flufenamic acid": {
+    "atc": "M01AG03",
+    "class": "NSAID",
+    "effects": [
+      "GI_bleeding",
+      "nephrotoxic",
+      "fluid_retention",
+      "antiplatelet"
+    ]
+  },
+  "meclofenamic acid": {
+    "atc": "M01AG04",
+    "class": "NSAID",
+    "effects": [
+      "GI_bleeding",
+      "nephrotoxic",
+      "fluid_retention",
+      "antiplatelet"
+    ]
+  },
+  "celecoxib": {
+    "atc": "M01AH01",
+    "class": "COX2_inhibitor",
+    "effects": [
+      "GI_bleeding_lower",
+      "nephrotoxic",
+      "cardiovascular_risk"
+    ]
+  },
+  "rofecoxib": {
+    "atc": "M01AH02",
+    "class": "COX2_inhibitor",
+    "effects": [
+      "GI_bleeding_lower",
+      "nephrotoxic",
+      "cardiovascular_risk"
+    ]
+  },
+  "valdecoxib": {
+    "atc": "M01AH03",
+    "class": "COX2_inhibitor",
+    "effects": [
+      "GI_bleeding_lower",
+      "nephrotoxic",
+      "cardiovascular_risk"
+    ]
+  },
+  "parecoxib": {
+    "atc": "M01AH04",
+    "class": "COX2_inhibitor",
+    "effects": [
+      "GI_bleeding_lower",
+      "nephrotoxic",
+      "cardiovascular_risk"
+    ]
+  },
+  "etoricoxib": {
+    "atc": "M01AH05",
+    "class": "COX2_inhibitor",
+    "effects": [
+      "GI_bleeding_lower",
+      "nephrotoxic",
+      "cardiovascular_risk"
+    ]
+  },
+  "lumiracoxib": {
+    "atc": "M01AH06",
+    "class": "COX2_inhibitor",
+    "effects": [
+      "GI_bleeding_lower",
+      "nephrotoxic",
+      "cardiovascular_risk"
+    ]
+  },
+  "polmacoxib": {
+    "atc": "M01AH07",
+    "class": "COX2_inhibitor",
+    "effects": [
+      "GI_bleeding_lower",
+      "nephrotoxic",
+      "cardiovascular_risk"
+    ]
+  },
+  "baclofen": {
+    "atc": "M03BX01",
+    "class": "muscle_relaxant",
+    "effects": [
+      "anticholinergic",
+      "sedating"
+    ]
+  },
+  "tizanidine": {
+    "atc": "M03BX02",
+    "class": "muscle_relaxant",
+    "effects": [
+      "anticholinergic",
+      "sedating"
+    ]
+  },
+  "pridinol": {
+    "atc": "M03BX03",
+    "class": "muscle_relaxant",
+    "effects": [
+      "anticholinergic",
+      "sedating"
+    ]
+  },
+  "tolperisone": {
+    "atc": "M03BX04",
+    "class": "muscle_relaxant",
+    "effects": [
+      "anticholinergic",
+      "sedating"
+    ]
+  },
+  "thiocolchicoside": {
+    "atc": "M03BX05",
+    "class": "muscle_relaxant",
+    "effects": [
+      "anticholinergic",
+      "sedating"
+    ]
+  },
+  "mephenesin": {
+    "atc": "M03BX06",
+    "class": "muscle_relaxant",
+    "effects": [
+      "anticholinergic",
+      "sedating"
+    ]
+  },
+  "tetrazepam": {
+    "atc": "M03BX07",
+    "class": "muscle_relaxant",
+    "effects": [
+      "anticholinergic",
+      "sedating"
+    ]
+  },
+  "cyclobenzaprine": {
+    "atc": "M03BX08",
+    "class": "muscle_relaxant",
+    "effects": [
+      "anticholinergic",
+      "sedating"
+    ]
+  },
+  "eperisone": {
+    "atc": "M03BX09",
+    "class": "muscle_relaxant",
+    "effects": [
+      "anticholinergic",
+      "sedating"
+    ]
+  },
+  "fenyramidol": {
+    "atc": "M03BX30",
+    "class": "muscle_relaxant",
+    "effects": [
+      "anticholinergic",
+      "sedating"
+    ]
+  },
+  "thiocolchicoside, combinations": {
+    "atc": "M03BX55",
+    "class": "muscle_relaxant",
+    "effects": [
+      "anticholinergic",
+      "sedating"
+    ]
+  },
+  "morphine": {
+    "atc": "N02AA01",
+    "class": "opioid",
+    "effects": [
+      "opioid",
+      "sedating",
+      "respiratory_depressant",
+      "constipating"
+    ]
+  },
+  "opium": {
+    "atc": "N02AA02",
+    "class": "opioid",
+    "effects": [
+      "opioid",
+      "sedating",
+      "respiratory_depressant",
+      "constipating"
+    ]
+  },
+  "hydromorphone": {
+    "atc": "N02AA03",
+    "class": "opioid",
+    "effects": [
+      "opioid",
+      "sedating",
+      "respiratory_depressant",
+      "constipating"
+    ]
+  },
+  "nicomorphine": {
+    "atc": "N02AA04",
+    "class": "opioid",
+    "effects": [
+      "opioid",
+      "sedating",
+      "respiratory_depressant",
+      "constipating"
+    ]
+  },
+  "oxycodone": {
+    "atc": "N02AA05",
+    "class": "opioid",
+    "effects": [
+      "opioid",
+      "sedating",
+      "respiratory_depressant",
+      "constipating"
+    ]
+  },
+  "dihydrocodeine": {
+    "atc": "N02AA08",
+    "class": "opioid",
+    "effects": [
+      "opioid",
+      "sedating",
+      "respiratory_depressant",
+      "constipating"
+    ]
+  },
+  "papaveretum": {
+    "atc": "N02AA10",
+    "class": "opioid",
+    "effects": [
+      "opioid",
+      "sedating",
+      "respiratory_depressant",
+      "constipating"
+    ]
+  },
+  "oxymorphone": {
+    "atc": "N02AA11",
+    "class": "opioid",
+    "effects": [
+      "opioid",
+      "sedating",
+      "respiratory_depressant",
+      "constipating"
+    ]
+  },
+  "morphine, combinations": {
+    "atc": "N02AA51",
+    "class": "opioid",
+    "effects": [
+      "opioid",
+      "sedating",
+      "respiratory_depressant",
+      "constipating"
+    ]
+  },
+  "hydromorphone and naloxone": {
+    "atc": "N02AA53",
+    "class": "opioid",
+    "effects": [
+      "opioid",
+      "sedating",
+      "respiratory_depressant",
+      "constipating"
+    ]
+  },
+  "oxycodone and naloxone": {
+    "atc": "N02AA55",
+    "class": "opioid",
+    "effects": [
+      "opioid",
+      "sedating",
+      "respiratory_depressant",
+      "constipating"
+    ]
+  },
+  "oxycodone and naltrexone": {
+    "atc": "N02AA56",
+    "class": "opioid",
+    "effects": [
+      "opioid",
+      "sedating",
+      "respiratory_depressant",
+      "constipating"
+    ]
+  },
+  "dihydrocodeine, combinations": {
+    "atc": "N02AA58",
+    "class": "opioid",
+    "effects": [
+      "opioid",
+      "sedating",
+      "respiratory_depressant",
+      "constipating"
+    ]
+  },
+  "codeine, combinations excl. psycholeptics": {
+    "atc": "N02AA59",
+    "class": "opioid",
+    "effects": [
+      "opioid",
+      "sedating",
+      "respiratory_depressant",
+      "constipating"
+    ]
+  },
+  "codeine, combinations with psycholeptics": {
+    "atc": "N02AA79",
+    "class": "opioid",
+    "effects": [
+      "opioid",
+      "sedating",
+      "respiratory_depressant",
+      "constipating"
+    ]
+  },
+  "ketobemidone": {
+    "atc": "N02AB01",
+    "class": "opioid",
+    "effects": [
+      "opioid",
+      "sedating",
+      "respiratory_depressant",
+      "constipating"
+    ]
+  },
+  "pethidine": {
+    "atc": "N02AB02",
+    "class": "opioid",
+    "effects": [
+      "opioid",
+      "sedating",
+      "respiratory_depressant",
+      "constipating"
+    ]
+  },
+  "fentanyl": {
+    "atc": "N02AB03",
+    "class": "opioid",
+    "effects": [
+      "opioid",
+      "sedating",
+      "respiratory_depressant",
+      "constipating"
+    ]
+  },
+  "pethidine, combinations excl. psycholeptics": {
+    "atc": "N02AB52",
+    "class": "opioid",
+    "effects": [
+      "opioid",
+      "sedating",
+      "respiratory_depressant",
+      "constipating"
+    ]
+  },
+  "pethidine, combinations with psycholeptics": {
+    "atc": "N02AB72",
+    "class": "opioid",
+    "effects": [
+      "opioid",
+      "sedating",
+      "respiratory_depressant",
+      "constipating"
+    ]
+  },
+  "buprenorphine": {
+    "atc": "N02AE01",
+    "class": "opioid",
+    "effects": [
+      "opioid",
+      "sedating",
+      "respiratory_depressant",
+      "constipating"
+    ]
+  },
+  "tilidine": {
+    "atc": "N02AX01",
+    "class": "opioid_atypical",
+    "effects": [
+      "opioid",
+      "serotonergic",
+      "seizure_lowering"
+    ]
+  },
+  "tramadol": {
+    "atc": "N02AX02",
+    "class": "opioid_atypical",
+    "effects": [
+      "opioid",
+      "serotonergic",
+      "seizure_lowering"
+    ]
+  },
+  "dezocine": {
+    "atc": "N02AX03",
+    "class": "opioid_atypical",
+    "effects": [
+      "opioid",
+      "serotonergic",
+      "seizure_lowering"
+    ]
+  },
+  "meptazinol": {
+    "atc": "N02AX05",
+    "class": "opioid_atypical",
+    "effects": [
+      "opioid",
+      "serotonergic",
+      "seizure_lowering"
+    ]
+  },
+  "tapentadol": {
+    "atc": "N02AX06",
+    "class": "opioid_atypical",
+    "effects": [
+      "opioid",
+      "serotonergic",
+      "seizure_lowering"
+    ]
+  },
+  "clonazepam": {
+    "atc": "N03AE01",
+    "class": "benzodiazepine",
+    "effects": [
+      "sedating",
+      "fall_risk",
+      "respiratory_depressant"
+    ]
+  },
+  "sultiame": {
+    "atc": "N03AX03",
+    "class": "anticonvulsant",
+    "effects": [
+      "sedating",
+      "fall_risk"
+    ]
+  },
+  "phenacemide": {
+    "atc": "N03AX07",
+    "class": "anticonvulsant",
+    "effects": [
+      "sedating",
+      "fall_risk"
+    ]
+  },
+  "lamotrigine": {
+    "atc": "N03AX09",
+    "class": "anticonvulsant",
+    "effects": [
+      "sedating",
+      "fall_risk"
+    ]
+  },
+  "felbamate": {
+    "atc": "N03AX10",
+    "class": "anticonvulsant",
+    "effects": [
+      "sedating",
+      "fall_risk"
+    ]
+  },
+  "topiramate": {
+    "atc": "N03AX11",
+    "class": "anticonvulsant",
+    "effects": [
+      "sedating",
+      "fall_risk"
+    ]
+  },
+  "gabapentin": {
+    "atc": "N03AX12",
+    "class": "anticonvulsant",
+    "effects": [
+      "sedating",
+      "fall_risk"
+    ]
+  },
+  "pheneturide": {
+    "atc": "N03AX13",
+    "class": "anticonvulsant",
+    "effects": [
+      "sedating",
+      "fall_risk"
+    ]
+  },
+  "levetiracetam": {
+    "atc": "N03AX14",
+    "class": "anticonvulsant",
+    "effects": [
+      "sedating",
+      "fall_risk"
+    ]
+  },
+  "zonisamide": {
+    "atc": "N03AX15",
+    "class": "anticonvulsant",
+    "effects": [
+      "sedating",
+      "fall_risk"
+    ]
+  },
+  "pregabalin": {
+    "atc": "N03AX16",
+    "class": "anticonvulsant",
+    "effects": [
+      "sedating",
+      "fall_risk"
+    ]
+  },
+  "stiripentol": {
+    "atc": "N03AX17",
+    "class": "anticonvulsant",
+    "effects": [
+      "sedating",
+      "fall_risk"
+    ]
+  },
+  "lacosamide": {
+    "atc": "N03AX18",
+    "class": "anticonvulsant",
+    "effects": [
+      "sedating",
+      "fall_risk"
+    ]
+  },
+  "carisbamate": {
+    "atc": "N03AX19",
+    "class": "anticonvulsant",
+    "effects": [
+      "sedating",
+      "fall_risk"
+    ]
+  },
+  "retigabine": {
+    "atc": "N03AX21",
+    "class": "anticonvulsant",
+    "effects": [
+      "sedating",
+      "fall_risk"
+    ]
+  },
+  "perampanel": {
+    "atc": "N03AX22",
+    "class": "anticonvulsant",
+    "effects": [
+      "sedating",
+      "fall_risk"
+    ]
+  },
+  "brivaracetam": {
+    "atc": "N03AX23",
+    "class": "anticonvulsant",
+    "effects": [
+      "sedating",
+      "fall_risk"
+    ]
+  },
+  "cannabidiol": {
+    "atc": "N03AX24",
+    "class": "anticonvulsant",
+    "effects": [
+      "sedating",
+      "fall_risk"
+    ]
+  },
+  "cenobamate": {
+    "atc": "N03AX25",
+    "class": "anticonvulsant",
+    "effects": [
+      "sedating",
+      "fall_risk"
+    ]
+  },
+  "fenfluramine": {
+    "atc": "N03AX26",
+    "class": "anticonvulsant",
+    "effects": [
+      "sedating",
+      "fall_risk"
+    ]
+  },
+  "beclamide": {
+    "atc": "N03AX30",
+    "class": "anticonvulsant",
+    "effects": [
+      "sedating",
+      "fall_risk"
+    ]
+  },
+  "haloperidol": {
+    "atc": "N05AD01",
+    "class": "antipsychotic_typical",
+    "effects": [
+      "dopamine_blocking",
+      "QT_prolonging",
+      "EPS_risk"
+    ]
+  },
+  "trifluperidol": {
+    "atc": "N05AD02",
+    "class": "antipsychotic_typical",
+    "effects": [
+      "dopamine_blocking",
+      "QT_prolonging",
+      "EPS_risk"
+    ]
+  },
+  "melperone": {
+    "atc": "N05AD03",
+    "class": "antipsychotic_typical",
+    "effects": [
+      "dopamine_blocking",
+      "QT_prolonging",
+      "EPS_risk"
+    ]
+  },
+  "moperone": {
+    "atc": "N05AD04",
+    "class": "antipsychotic_typical",
+    "effects": [
+      "dopamine_blocking",
+      "QT_prolonging",
+      "EPS_risk"
+    ]
+  },
+  "pipamperone": {
+    "atc": "N05AD05",
+    "class": "antipsychotic_typical",
+    "effects": [
+      "dopamine_blocking",
+      "QT_prolonging",
+      "EPS_risk"
+    ]
+  },
+  "bromperidol": {
+    "atc": "N05AD06",
+    "class": "antipsychotic_typical",
+    "effects": [
+      "dopamine_blocking",
+      "QT_prolonging",
+      "EPS_risk"
+    ]
+  },
+  "benperidol": {
+    "atc": "N05AD07",
+    "class": "antipsychotic_typical",
+    "effects": [
+      "dopamine_blocking",
+      "QT_prolonging",
+      "EPS_risk"
+    ]
+  },
+  "droperidol": {
+    "atc": "N05AD08",
+    "class": "antipsychotic_typical",
+    "effects": [
+      "dopamine_blocking",
+      "QT_prolonging",
+      "EPS_risk"
+    ]
+  },
+  "fluanisone": {
+    "atc": "N05AD09",
+    "class": "antipsychotic_typical",
+    "effects": [
+      "dopamine_blocking",
+      "QT_prolonging",
+      "EPS_risk"
+    ]
+  },
+  "loxapine": {
+    "atc": "N05AH01",
+    "class": "antipsychotic_atypical",
+    "effects": [
+      "dopamine_blocking",
+      "QT_prolonging",
+      "metabolic_risk"
+    ]
+  },
+  "clozapine": {
+    "atc": "N05AH02",
+    "class": "antipsychotic_atypical",
+    "effects": [
+      "dopamine_blocking",
+      "QT_prolonging",
+      "metabolic_risk"
+    ]
+  },
+  "olanzapine": {
+    "atc": "N05AH03",
+    "class": "antipsychotic_atypical",
+    "effects": [
+      "dopamine_blocking",
+      "QT_prolonging",
+      "metabolic_risk"
+    ]
+  },
+  "quetiapine": {
+    "atc": "N05AH04",
+    "class": "antipsychotic_atypical",
+    "effects": [
+      "dopamine_blocking",
+      "QT_prolonging",
+      "metabolic_risk"
+    ]
+  },
+  "asenapine": {
+    "atc": "N05AH05",
+    "class": "antipsychotic_atypical",
+    "effects": [
+      "dopamine_blocking",
+      "QT_prolonging",
+      "metabolic_risk"
+    ]
+  },
+  "clotiapine": {
+    "atc": "N05AH06",
+    "class": "antipsychotic_atypical",
+    "effects": [
+      "dopamine_blocking",
+      "QT_prolonging",
+      "metabolic_risk"
+    ]
+  },
+  "sulpiride": {
+    "atc": "N05AL01",
+    "class": "antipsychotic_typical",
+    "effects": [
+      "dopamine_blocking",
+      "QT_prolonging",
+      "EPS_risk"
+    ]
+  },
+  "sultopride": {
+    "atc": "N05AL02",
+    "class": "antipsychotic_typical",
+    "effects": [
+      "dopamine_blocking",
+      "QT_prolonging",
+      "EPS_risk"
+    ]
+  },
+  "tiapride": {
+    "atc": "N05AL03",
+    "class": "antipsychotic_typical",
+    "effects": [
+      "dopamine_blocking",
+      "QT_prolonging",
+      "EPS_risk"
+    ]
+  },
+  "remoxipride": {
+    "atc": "N05AL04",
+    "class": "antipsychotic_typical",
+    "effects": [
+      "dopamine_blocking",
+      "QT_prolonging",
+      "EPS_risk"
+    ]
+  },
+  "amisulpride": {
+    "atc": "N05AL05",
+    "class": "antipsychotic_typical",
+    "effects": [
+      "dopamine_blocking",
+      "QT_prolonging",
+      "EPS_risk"
+    ]
+  },
+  "veralipride": {
+    "atc": "N05AL06",
+    "class": "antipsychotic_typical",
+    "effects": [
+      "dopamine_blocking",
+      "QT_prolonging",
+      "EPS_risk"
+    ]
+  },
+  "levosulpiride": {
+    "atc": "N05AL07",
+    "class": "antipsychotic_typical",
+    "effects": [
+      "dopamine_blocking",
+      "QT_prolonging",
+      "EPS_risk"
+    ]
+  },
+  "diazepam": {
+    "atc": "N05BA01",
+    "class": "benzodiazepine",
+    "effects": [
+      "sedating",
+      "fall_risk",
+      "respiratory_depressant"
+    ]
+  },
+  "chlordiazepoxide": {
+    "atc": "N05BA02",
+    "class": "benzodiazepine",
+    "effects": [
+      "sedating",
+      "fall_risk",
+      "respiratory_depressant"
+    ]
+  },
+  "medazepam": {
+    "atc": "N05BA03",
+    "class": "benzodiazepine",
+    "effects": [
+      "sedating",
+      "fall_risk",
+      "respiratory_depressant"
+    ]
+  },
+  "oxazepam": {
+    "atc": "N05BA04",
+    "class": "benzodiazepine",
+    "effects": [
+      "sedating",
+      "fall_risk",
+      "respiratory_depressant"
+    ]
+  },
+  "potassium clorazepate": {
+    "atc": "N05BA05",
+    "class": "benzodiazepine",
+    "effects": [
+      "sedating",
+      "fall_risk",
+      "respiratory_depressant"
+    ]
+  },
+  "lorazepam": {
+    "atc": "N05BA06",
+    "class": "benzodiazepine",
+    "effects": [
+      "sedating",
+      "fall_risk",
+      "respiratory_depressant"
+    ]
+  },
+  "adinazolam": {
+    "atc": "N05BA07",
+    "class": "benzodiazepine",
+    "effects": [
+      "sedating",
+      "fall_risk",
+      "respiratory_depressant"
+    ]
+  },
+  "bromazepam": {
+    "atc": "N05BA08",
+    "class": "benzodiazepine",
+    "effects": [
+      "sedating",
+      "fall_risk",
+      "respiratory_depressant"
+    ]
+  },
+  "clobazam": {
+    "atc": "N05BA09",
+    "class": "benzodiazepine",
+    "effects": [
+      "sedating",
+      "fall_risk",
+      "respiratory_depressant"
+    ]
+  },
+  "ketazolam": {
+    "atc": "N05BA10",
+    "class": "benzodiazepine",
+    "effects": [
+      "sedating",
+      "fall_risk",
+      "respiratory_depressant"
+    ]
+  },
+  "prazepam": {
+    "atc": "N05BA11",
+    "class": "benzodiazepine",
+    "effects": [
+      "sedating",
+      "fall_risk",
+      "respiratory_depressant"
+    ]
+  },
+  "alprazolam": {
+    "atc": "N05BA12",
+    "class": "benzodiazepine",
+    "effects": [
+      "sedating",
+      "fall_risk",
+      "respiratory_depressant"
+    ]
+  },
+  "halazepam": {
+    "atc": "N05BA13",
+    "class": "benzodiazepine",
+    "effects": [
+      "sedating",
+      "fall_risk",
+      "respiratory_depressant"
+    ]
+  },
+  "pinazepam": {
+    "atc": "N05BA14",
+    "class": "benzodiazepine",
+    "effects": [
+      "sedating",
+      "fall_risk",
+      "respiratory_depressant"
+    ]
+  },
+  "camazepam": {
+    "atc": "N05BA15",
+    "class": "benzodiazepine",
+    "effects": [
+      "sedating",
+      "fall_risk",
+      "respiratory_depressant"
+    ]
+  },
+  "nordazepam": {
+    "atc": "N05BA16",
+    "class": "benzodiazepine",
+    "effects": [
+      "sedating",
+      "fall_risk",
+      "respiratory_depressant"
+    ]
+  },
+  "fludiazepam": {
+    "atc": "N05BA17",
+    "class": "benzodiazepine",
+    "effects": [
+      "sedating",
+      "fall_risk",
+      "respiratory_depressant"
+    ]
+  },
+  "ethyl loflazepate": {
+    "atc": "N05BA18",
+    "class": "benzodiazepine",
+    "effects": [
+      "sedating",
+      "fall_risk",
+      "respiratory_depressant"
+    ]
+  },
+  "etizolam": {
+    "atc": "N05BA19",
+    "class": "benzodiazepine",
+    "effects": [
+      "sedating",
+      "fall_risk",
+      "respiratory_depressant"
+    ]
+  },
+  "clotiazepam": {
+    "atc": "N05BA21",
+    "class": "benzodiazepine",
+    "effects": [
+      "sedating",
+      "fall_risk",
+      "respiratory_depressant"
+    ]
+  },
+  "cloxazolam": {
+    "atc": "N05BA22",
+    "class": "benzodiazepine",
+    "effects": [
+      "sedating",
+      "fall_risk",
+      "respiratory_depressant"
+    ]
+  },
+  "tofisopam": {
+    "atc": "N05BA23",
+    "class": "benzodiazepine",
+    "effects": [
+      "sedating",
+      "fall_risk",
+      "respiratory_depressant"
+    ]
+  },
+  "bentazepam": {
+    "atc": "N05BA24",
+    "class": "benzodiazepine",
+    "effects": [
+      "sedating",
+      "fall_risk",
+      "respiratory_depressant"
+    ]
+  },
+  "lorazepam, combinations": {
+    "atc": "N05BA56",
+    "class": "benzodiazepine",
+    "effects": [
+      "sedating",
+      "fall_risk",
+      "respiratory_depressant"
+    ]
+  },
+  "flurazepam": {
+    "atc": "N05CD01",
+    "class": "benzodiazepine",
+    "effects": [
+      "sedating",
+      "fall_risk",
+      "respiratory_depressant"
+    ]
+  },
+  "nitrazepam": {
+    "atc": "N05CD02",
+    "class": "benzodiazepine",
+    "effects": [
+      "sedating",
+      "fall_risk",
+      "respiratory_depressant"
+    ]
+  },
+  "flunitrazepam": {
+    "atc": "N05CD03",
+    "class": "benzodiazepine",
+    "effects": [
+      "sedating",
+      "fall_risk",
+      "respiratory_depressant"
+    ]
+  },
+  "estazolam": {
+    "atc": "N05CD04",
+    "class": "benzodiazepine",
+    "effects": [
+      "sedating",
+      "fall_risk",
+      "respiratory_depressant"
+    ]
+  },
+  "triazolam": {
+    "atc": "N05CD05",
+    "class": "benzodiazepine",
+    "effects": [
+      "sedating",
+      "fall_risk",
+      "respiratory_depressant"
+    ]
+  },
+  "lormetazepam": {
+    "atc": "N05CD06",
+    "class": "benzodiazepine",
+    "effects": [
+      "sedating",
+      "fall_risk",
+      "respiratory_depressant"
+    ]
+  },
+  "temazepam": {
+    "atc": "N05CD07",
+    "class": "benzodiazepine",
+    "effects": [
+      "sedating",
+      "fall_risk",
+      "respiratory_depressant"
+    ]
+  },
+  "midazolam": {
+    "atc": "N05CD08",
+    "class": "benzodiazepine",
+    "effects": [
+      "sedating",
+      "fall_risk",
+      "respiratory_depressant"
+    ]
+  },
+  "brotizolam": {
+    "atc": "N05CD09",
+    "class": "benzodiazepine",
+    "effects": [
+      "sedating",
+      "fall_risk",
+      "respiratory_depressant"
+    ]
+  },
+  "quazepam": {
+    "atc": "N05CD10",
+    "class": "benzodiazepine",
+    "effects": [
+      "sedating",
+      "fall_risk",
+      "respiratory_depressant"
+    ]
+  },
+  "loprazolam": {
+    "atc": "N05CD11",
+    "class": "benzodiazepine",
+    "effects": [
+      "sedating",
+      "fall_risk",
+      "respiratory_depressant"
+    ]
+  },
+  "doxefazepam": {
+    "atc": "N05CD12",
+    "class": "benzodiazepine",
+    "effects": [
+      "sedating",
+      "fall_risk",
+      "respiratory_depressant"
+    ]
+  },
+  "cinolazepam": {
+    "atc": "N05CD13",
+    "class": "benzodiazepine",
+    "effects": [
+      "sedating",
+      "fall_risk",
+      "respiratory_depressant"
+    ]
+  },
+  "remimazolam": {
+    "atc": "N05CD14",
+    "class": "benzodiazepine",
+    "effects": [
+      "sedating",
+      "fall_risk",
+      "respiratory_depressant"
+    ]
+  },
+  "nimetazepam": {
+    "atc": "N05CD15",
+    "class": "benzodiazepine",
+    "effects": [
+      "sedating",
+      "fall_risk",
+      "respiratory_depressant"
+    ]
+  },
+  "zopiclone": {
+    "atc": "N05CF01",
+    "class": "z_drug",
+    "effects": [
+      "sedating",
+      "fall_risk"
+    ]
+  },
+  "zolpidem": {
+    "atc": "N05CF02",
+    "class": "z_drug",
+    "effects": [
+      "sedating",
+      "fall_risk"
+    ]
+  },
+  "zaleplon": {
+    "atc": "N05CF03",
+    "class": "z_drug",
+    "effects": [
+      "sedating",
+      "fall_risk"
+    ]
+  },
+  "eszopiclone": {
+    "atc": "N05CF04",
+    "class": "z_drug",
+    "effects": [
+      "sedating",
+      "fall_risk"
+    ]
+  },
+  "methaqualone": {
+    "atc": "N05CM01",
+    "class": "sedative_other",
+    "effects": [
+      "sedating",
+      "fall_risk"
+    ]
+  },
+  "clomethiazole": {
+    "atc": "N05CM02",
+    "class": "sedative_other",
+    "effects": [
+      "sedating",
+      "fall_risk"
+    ]
+  },
+  "bromisoval": {
+    "atc": "N05CM03",
+    "class": "sedative_other",
+    "effects": [
+      "sedating",
+      "fall_risk"
+    ]
+  },
+  "carbromal": {
+    "atc": "N05CM04",
+    "class": "sedative_other",
+    "effects": [
+      "sedating",
+      "fall_risk"
+    ]
+  },
+  "scopolamine": {
+    "atc": "N05CM05",
+    "class": "sedative_other",
+    "effects": [
+      "sedating",
+      "fall_risk"
+    ]
+  },
+  "propiomazine": {
+    "atc": "N05CM06",
+    "class": "sedative_other",
+    "effects": [
+      "sedating",
+      "fall_risk"
+    ]
+  },
+  "triclofos": {
+    "atc": "N05CM07",
+    "class": "sedative_other",
+    "effects": [
+      "sedating",
+      "fall_risk"
+    ]
+  },
+  "ethchlorvynol": {
+    "atc": "N05CM08",
+    "class": "sedative_other",
+    "effects": [
+      "sedating",
+      "fall_risk"
+    ]
+  },
+  "valerianae radix": {
+    "atc": "N05CM09",
+    "class": "sedative_other",
+    "effects": [
+      "sedating",
+      "fall_risk"
+    ]
+  },
+  "hexapropymate": {
+    "atc": "N05CM10",
+    "class": "sedative_other",
+    "effects": [
+      "sedating",
+      "fall_risk"
+    ]
+  },
+  "bromides": {
+    "atc": "N05CM11",
+    "class": "sedative_other",
+    "effects": [
+      "sedating",
+      "fall_risk"
+    ]
+  },
+  "apronal": {
+    "atc": "N05CM12",
+    "class": "sedative_other",
+    "effects": [
+      "sedating",
+      "fall_risk"
+    ]
+  },
+  "valnoctamide": {
+    "atc": "N05CM13",
+    "class": "sedative_other",
+    "effects": [
+      "sedating",
+      "fall_risk"
+    ]
+  },
+  "methylpentynol": {
+    "atc": "N05CM15",
+    "class": "sedative_other",
+    "effects": [
+      "sedating",
+      "fall_risk"
+    ]
+  },
+  "niaprazine": {
+    "atc": "N05CM16",
+    "class": "sedative_other",
+    "effects": [
+      "sedating",
+      "fall_risk"
+    ]
+  },
+  "dexmedetomidine": {
+    "atc": "N05CM18",
+    "class": "sedative_other",
+    "effects": [
+      "sedating",
+      "fall_risk"
+    ]
+  },
+  "suvorexant": {
+    "atc": "N05CM19",
+    "class": "sedative_other",
+    "effects": [
+      "sedating",
+      "fall_risk"
+    ]
+  },
+  "desipramine": {
+    "atc": "N06AA01",
+    "class": "TCA",
+    "effects": [
+      "anticholinergic",
+      "sedating",
+      "QT_prolonging",
+      "serotonergic"
+    ]
+  },
+  "imipramine": {
+    "atc": "N06AA02",
+    "class": "TCA",
+    "effects": [
+      "anticholinergic",
+      "sedating",
+      "QT_prolonging",
+      "serotonergic"
+    ]
+  },
+  "imipramine oxide": {
+    "atc": "N06AA03",
+    "class": "TCA",
+    "effects": [
+      "anticholinergic",
+      "sedating",
+      "QT_prolonging",
+      "serotonergic"
+    ]
+  },
+  "clomipramine": {
+    "atc": "N06AA04",
+    "class": "TCA",
+    "effects": [
+      "anticholinergic",
+      "sedating",
+      "QT_prolonging",
+      "serotonergic"
+    ]
+  },
+  "opipramol": {
+    "atc": "N06AA05",
+    "class": "TCA",
+    "effects": [
+      "anticholinergic",
+      "sedating",
+      "QT_prolonging",
+      "serotonergic"
+    ]
+  },
+  "trimipramine": {
+    "atc": "N06AA06",
+    "class": "TCA",
+    "effects": [
+      "anticholinergic",
+      "sedating",
+      "QT_prolonging",
+      "serotonergic"
+    ]
+  },
+  "lofepramine": {
+    "atc": "N06AA07",
+    "class": "TCA",
+    "effects": [
+      "anticholinergic",
+      "sedating",
+      "QT_prolonging",
+      "serotonergic"
+    ]
+  },
+  "dibenzepin": {
+    "atc": "N06AA08",
+    "class": "TCA",
+    "effects": [
+      "anticholinergic",
+      "sedating",
+      "QT_prolonging",
+      "serotonergic"
+    ]
+  },
+  "amitriptyline": {
+    "atc": "N06AA09",
+    "class": "TCA",
+    "effects": [
+      "anticholinergic",
+      "sedating",
+      "QT_prolonging",
+      "serotonergic"
+    ]
+  },
+  "nortriptyline": {
+    "atc": "N06AA10",
+    "class": "TCA",
+    "effects": [
+      "anticholinergic",
+      "sedating",
+      "QT_prolonging",
+      "serotonergic"
+    ]
+  },
+  "protriptyline": {
+    "atc": "N06AA11",
+    "class": "TCA",
+    "effects": [
+      "anticholinergic",
+      "sedating",
+      "QT_prolonging",
+      "serotonergic"
+    ]
+  },
+  "doxepin": {
+    "atc": "N06AA12",
+    "class": "TCA",
+    "effects": [
+      "anticholinergic",
+      "sedating",
+      "QT_prolonging",
+      "serotonergic"
+    ]
+  },
+  "iprindole": {
+    "atc": "N06AA13",
+    "class": "TCA",
+    "effects": [
+      "anticholinergic",
+      "sedating",
+      "QT_prolonging",
+      "serotonergic"
+    ]
+  },
+  "melitracen": {
+    "atc": "N06AA14",
+    "class": "TCA",
+    "effects": [
+      "anticholinergic",
+      "sedating",
+      "QT_prolonging",
+      "serotonergic"
+    ]
+  },
+  "butriptyline": {
+    "atc": "N06AA15",
+    "class": "TCA",
+    "effects": [
+      "anticholinergic",
+      "sedating",
+      "QT_prolonging",
+      "serotonergic"
+    ]
+  },
+  "dosulepin": {
+    "atc": "N06AA16",
+    "class": "TCA",
+    "effects": [
+      "anticholinergic",
+      "sedating",
+      "QT_prolonging",
+      "serotonergic"
+    ]
+  },
+  "amoxapine": {
+    "atc": "N06AA17",
+    "class": "TCA",
+    "effects": [
+      "anticholinergic",
+      "sedating",
+      "QT_prolonging",
+      "serotonergic"
+    ]
+  },
+  "dimetacrine": {
+    "atc": "N06AA18",
+    "class": "TCA",
+    "effects": [
+      "anticholinergic",
+      "sedating",
+      "QT_prolonging",
+      "serotonergic"
+    ]
+  },
+  "amineptine": {
+    "atc": "N06AA19",
+    "class": "TCA",
+    "effects": [
+      "anticholinergic",
+      "sedating",
+      "QT_prolonging",
+      "serotonergic"
+    ]
+  },
+  "maprotiline": {
+    "atc": "N06AA21",
+    "class": "TCA",
+    "effects": [
+      "anticholinergic",
+      "sedating",
+      "QT_prolonging",
+      "serotonergic"
+    ]
+  },
+  "quinupramine": {
+    "atc": "N06AA23",
+    "class": "TCA",
+    "effects": [
+      "anticholinergic",
+      "sedating",
+      "QT_prolonging",
+      "serotonergic"
+    ]
+  },
+  "zimeldine": {
+    "atc": "N06AB02",
+    "class": "SSRI",
+    "effects": [
+      "serotonergic",
+      "bleeding_risk"
+    ]
+  },
+  "fluoxetine": {
+    "atc": "N06AB03",
+    "class": "SSRI",
+    "effects": [
+      "serotonergic",
+      "bleeding_risk"
+    ]
+  },
+  "citalopram": {
+    "atc": "N06AB04",
+    "class": "SSRI",
+    "effects": [
+      "serotonergic",
+      "bleeding_risk"
+    ]
+  },
+  "paroxetine": {
+    "atc": "N06AB05",
+    "class": "SSRI",
+    "effects": [
+      "serotonergic",
+      "bleeding_risk"
+    ]
+  },
+  "sertraline": {
+    "atc": "N06AB06",
+    "class": "SSRI",
+    "effects": [
+      "serotonergic",
+      "bleeding_risk"
+    ]
+  },
+  "alaproclate": {
+    "atc": "N06AB07",
+    "class": "SSRI",
+    "effects": [
+      "serotonergic",
+      "bleeding_risk"
+    ]
+  },
+  "fluvoxamine": {
+    "atc": "N06AB08",
+    "class": "SSRI",
+    "effects": [
+      "serotonergic",
+      "bleeding_risk"
+    ]
+  },
+  "etoperidone": {
+    "atc": "N06AB09",
+    "class": "SSRI",
+    "effects": [
+      "serotonergic",
+      "bleeding_risk"
+    ]
+  },
+  "escitalopram": {
+    "atc": "N06AB10",
+    "class": "SSRI",
+    "effects": [
+      "serotonergic",
+      "bleeding_risk"
+    ]
+  },
+  "oxitriptan": {
+    "atc": "N06AX01",
+    "class": "SNRI_other",
+    "effects": [
+      "serotonergic"
+    ]
+  },
+  "tryptophan": {
+    "atc": "N06AX02",
+    "class": "SNRI_other",
+    "effects": [
+      "serotonergic"
+    ]
+  },
+  "mianserin": {
+    "atc": "N06AX03",
+    "class": "SNRI_other",
+    "effects": [
+      "serotonergic"
+    ]
+  },
+  "nomifensine": {
+    "atc": "N06AX04",
+    "class": "SNRI_other",
+    "effects": [
+      "serotonergic"
+    ]
+  },
+  "trazodone": {
+    "atc": "N06AX05",
+    "class": "SNRI_other",
+    "effects": [
+      "serotonergic"
+    ]
+  },
+  "nefazodone": {
+    "atc": "N06AX06",
+    "class": "SNRI_other",
+    "effects": [
+      "serotonergic"
+    ]
+  },
+  "minaprine": {
+    "atc": "N06AX07",
+    "class": "SNRI_other",
+    "effects": [
+      "serotonergic"
+    ]
+  },
+  "bifemelane": {
+    "atc": "N06AX08",
+    "class": "SNRI_other",
+    "effects": [
+      "serotonergic"
+    ]
+  },
+  "viloxazine": {
+    "atc": "N06AX09",
+    "class": "SNRI_other",
+    "effects": [
+      "serotonergic"
+    ]
+  },
+  "oxaflozane": {
+    "atc": "N06AX10",
+    "class": "SNRI_other",
+    "effects": [
+      "serotonergic"
+    ]
+  },
+  "mirtazapine": {
+    "atc": "N06AX11",
+    "class": "SNRI_other",
+    "effects": [
+      "serotonergic"
+    ]
+  },
+  "bupropion": {
+    "atc": "N06AX12",
+    "class": "SNRI_other",
+    "effects": [
+      "serotonergic"
+    ]
+  },
+  "medifoxamine": {
+    "atc": "N06AX13",
+    "class": "SNRI_other",
+    "effects": [
+      "serotonergic"
+    ]
+  },
+  "tianeptine": {
+    "atc": "N06AX14",
+    "class": "SNRI_other",
+    "effects": [
+      "serotonergic"
+    ]
+  },
+  "pivagabine": {
+    "atc": "N06AX15",
+    "class": "SNRI_other",
+    "effects": [
+      "serotonergic"
+    ]
+  },
+  "venlafaxine": {
+    "atc": "N06AX16",
+    "class": "SNRI_other",
+    "effects": [
+      "serotonergic"
+    ]
+  },
+  "milnacipran": {
+    "atc": "N06AX17",
+    "class": "SNRI_other",
+    "effects": [
+      "serotonergic"
+    ]
+  },
+  "reboxetine": {
+    "atc": "N06AX18",
+    "class": "SNRI_other",
+    "effects": [
+      "serotonergic"
+    ]
+  },
+  "gepirone": {
+    "atc": "N06AX19",
+    "class": "SNRI_other",
+    "effects": [
+      "serotonergic"
+    ]
+  },
+  "duloxetine": {
+    "atc": "N06AX21",
+    "class": "SNRI_other",
+    "effects": [
+      "serotonergic"
+    ]
+  },
+  "agomelatine": {
+    "atc": "N06AX22",
+    "class": "SNRI_other",
+    "effects": [
+      "serotonergic"
+    ]
+  },
+  "desvenlafaxine": {
+    "atc": "N06AX23",
+    "class": "SNRI_other",
+    "effects": [
+      "serotonergic"
+    ]
+  },
+  "vilazodone": {
+    "atc": "N06AX24",
+    "class": "SNRI_other",
+    "effects": [
+      "serotonergic"
+    ]
+  },
+  "hyperici herba": {
+    "atc": "N06AX25",
+    "class": "SNRI_other",
+    "effects": [
+      "serotonergic"
+    ]
+  },
+  "vortioxetine": {
+    "atc": "N06AX26",
+    "class": "SNRI_other",
+    "effects": [
+      "serotonergic"
+    ]
+  },
+  "esketamine": {
+    "atc": "N06AX27",
+    "class": "SNRI_other",
+    "effects": [
+      "serotonergic"
+    ]
+  }
+}
