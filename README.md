@@ -77,14 +77,26 @@ result.alerts.forEach(a => console.log(a.severity, a.message));
 
 ## Privacy
 
-This engine is **PHI-free by design**. It requires only:
-- Age (not DOB)
-- Sex
-- Lab values (eGFR)
-- Medication names
-- ICD-10 codes
+This engine is **PHI-free by design** per HIPAA Safe Harbor standards. It requires only:
 
-No patient identifiers (name, MRN, DOB, address) are needed or processed.
+| Data Element | PHI Status | Notes |
+|--------------|------------|-------|
+| Age (years) | ✅ Not PHI | Age is permitted; DOB is not |
+| Sex | ✅ Not PHI | Generic demographic |
+| eGFR | ✅ Not PHI | Lab value without patient link |
+| Weight | ✅ Not PHI | Biometric without patient link |
+| Medication names | ✅ Not PHI | Drug names only, no patient link |
+| ICD-10 codes | ✅ Not PHI | Diagnosis codes without patient link |
+
+**Not required or processed:**
+- ❌ Names
+- ❌ Date of birth
+- ❌ Medical record numbers
+- ❌ Addresses
+- ❌ Phone numbers
+- ❌ Any of the 18 HIPAA Safe Harbor identifiers
+
+The engine processes clinical parameters only - no patient identifiers are needed or accepted.
 
 ## References
 
